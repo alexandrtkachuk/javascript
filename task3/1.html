@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+   <head>
+	   <title>1</title>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+	<style>
+		.me3
+		{
+			float:left;
+			height: 100px;
+			width:100px;
+			margin-left:40px;
+		}
+	</style>
+     
+   </head>
+   <body>
+      
+	  <div class="me"  name="qwerty">
+	   dfsdfs
+	  </div>
+	  
+	  
+	  <div class="me"  name="qwerty2">
+	   dfsdfs
+	  </div>
+	  
+	  
+	  
+	  
+	  
+	  <button id="clickme">
+		click me
+	  </button>
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  <div style="height: 100px;
+width: 100px;
+ background:red;"   id="mydiv">
+	  
+	  </div>
+	  
+	  
+	  <button id="showMe"   z=0>
+			hide
+	  </button>
+	  
+	  
+	   <!--button id="hideMe">
+			hide
+	  </button-->
+	  
+	  
+	  
+	  
+	  
+	  
+	  <div><hr /></div>
+	  
+	  <div class="me3" style="background:red;"></div>
+	  <div class="me3" style="background:green;"></div>
+	  <div class="me3"style="background: yellow;"></div>
+	  
+	  <div>
+			<button id="show3">
+			show
+			</button>
+		
+		
+		<button id="hide3">
+			hide
+		</button>
+	  <div>
+	  
+	  
+	  <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+	  
+	  
+	  <script>
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  var i=0;
+		$('#clickme').click( function (event){
+				console.log(event);
+		});
+		
+		
+		$('#showMe').click(function (){
+			
+			
+			var z=$('#showMe').attr('z');
+			
+			if(z==0)
+			{
+				$('#showMe').text('show');
+				$('#showMe').attr('z',1);
+				$('#mydiv').hide(500);
+			}
+			else
+			{
+					$('#showMe').text('hide');
+					$('#showMe').attr('z',0);
+					
+					$('#mydiv').show(500);
+			}
+			
+		});
+		
+		$('#hideMe').click( function (){
+			$('#mydiv').hide(500);
+		});
+		
+		
+		
+		//===================
+		
+		
+		function hideMe(elements, i)		
+		{
+			if(i<0){
+				return;
+			}
+			
+			//$(elements[i]).toggle(5000, hideMe(elements, i-1));
+			
+			$(elements[i]).toggle(5000, hideMe(elements, i-1) );
+			console.log(i);
+		}
+		
+		
+		$('#hide3').click( function (){
+			var elemts =$('.me3');
+			
+			
+			hideMe(elemts, elemts.length-1);
+			
+			
+		});
+		
+		
+		
+		
+		
+		
+		
+	  </script>
+   </body>
+</html>

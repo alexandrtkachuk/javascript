@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+   <head>
+	   <title>1</title>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <style>
+		  
+		  
+		</style>
+  
+      
+   </head>
+   <body>
+     
+     
+     <input type="button" onclick="clearTimeout(timer)" value="Стоп">
+
+		<script> 
+		  var i = 1;
+		  
+		  function run() { 
+			
+			timer = setTimeout(run, 2000);
+			
+			dateObj = new Date();
+			//console.log(i++);
+			console.log(dateObj.getTime());
+			
+		  }
+
+		  var timer = setTimeout(run, 2000);
+
+		</script>
+     
+		  
+		  
+		  <script>
+			  
+			  
+			  
+			  
+			  
+			  var i=0;
+			  function meGo() {
+					i++;
+					console.log(i);
+					console.log(dateObj.getTime());
+				}
+				
+				dateObj = new Date();
+				
+				//console.log(dateObj.getTime());
+				//setInterval(meGo, 1000);
+
+				
+				
+				
+				
+			  </script>
+   </body>
+</html>
