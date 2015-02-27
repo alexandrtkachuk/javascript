@@ -8,7 +8,7 @@
   <style>
 	#popUp{
 			background: #000;
-			opacity: 0.7;
+			opacity: 0.5;
 			display:none;
 			top: 0;
 			position: absolute;
@@ -22,6 +22,7 @@
 	  z-index:10;
 	  display:none;
 	  position: absolute;
+	  opacity: 0.1;
 	  }
   
   </style>
@@ -44,18 +45,20 @@
 		 "use strict"
 		 
 		 
-		 
+		 var op=0.1;
+		 var mtop=0;
+		 var div=0.01;
 		
 		
 		
 		
 		
 		
-		
-		
-		function goPopUp(l,t)
-		{
+		function goPopUp (l,t) {
 			
+			op =0.1;
+			mtop=0;
+			div=0.01;
 			var myPopUp = document.getElementById('popUp');
 			var block = document.getElementById('block');
 			myPopUp.style.display='block';
@@ -79,46 +82,101 @@
 			
 			block.style.width=x.toString()+'px';
 			block.style.height=y.toString()+'px';
-			
-			block.style.marginTop=(t+y/2).toString()+'px';
+			block.style.marginTop='0px';
+			//block.style.marginTop=(t+y/2).toString()+'px';
 			block.style.marginLeft=(l+x/2).toString()+'px';
 			
 			
+			div=(y/2)/10;
+			 MyTime(10);	
 		}
 		
 		
 		
-		function show()
-		{
+		function show() {
 				 
 			var client_w=window.innerWidth;
 			var client_h=window.innerHeight;
+
 			
-			
-			
-			goPopUp(0,0); //отступ слева, отступ сверху
-			
-			
-			
-				
+			goPopUp(0,0); //отступ слева, отступ сверху	
 		}
 		
 		 
 		
-		function meClose()
-		{
+		function meClose () {
 			
 			var myPopUp = document.getElementById('popUp');
 			var block = document.getElementById('block');
 		
-			block.style.display='none';
+			//block.style.display='none';
 			myPopUp.style.display='none';
+			MyTime2(10);
 			
 		}
 		
+	
 		
+		
+		function MyTime(i) {
+			
+			function run() { 
+				
+				
+				if(i==0)
+				{
+					return;
+				}
+				
+				console.log( i);
+				i--;
+				
+				var block = document.getElementById('block');
+				op+=0.1;
+				mtop+=div;
+				block.style.opacity=op.toString();
+				block.style.marginTop=mtop.toString()+'px';
+				timer = setTimeout(run, 25);
+				
+				
+				
+			  }
+			 
+			 var timer = setTimeout(run, 25);
+		 
+		 }
 		 
 		 
+		 
+		function MyTime2(i) {
+			
+			function run() { 
+				
+				var block = document.getElementById('block');
+				
+				if(i==0)
+				{
+					block.style.display='none';
+					return;
+				}
+				
+				console.log( i);
+				i--;
+				
+				
+				op-=0.1;
+				mtop-=div;
+				block.style.opacity=op.toString();
+				block.style.marginTop=mtop.toString()+'px';
+				timer = setTimeout(run, 25);
+				
+				
+				
+			  }
+			 
+			 var timer = setTimeout(run, 25);
+		 
+		 }
 		 
 		 
 		 
