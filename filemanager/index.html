@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>File manager</title>
+
+    <!-- Bootstrap -->
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	
+	<style>
+		#block
+		{
+			
+			width:300px;
+			height:150px;
+			background:green;
+			display:none;
+			position: absolute;
+			z-index:10;
+			
+		}
+		
+		#popUp
+		{
+			background:#000;
+			opacity: 0.2;
+			position: absolute;
+			top:0px;
+			width:100%;
+		}
+	</style>
+	
+  </head>
+  <body>
+		
+		
+	<form>
+		<div id="queue"></div>
+		<input id="file_upload" name="file_upload" type="file" multiple="true">
+	</form>
+	
+	
+   <div id="content"></div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+	
+	<script src="js/fmanager.js"></script>
+	
+	
+  </body>
+</html>
