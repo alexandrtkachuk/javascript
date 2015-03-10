@@ -1,0 +1,48 @@
+<!doctype html>
+<html >
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+	<script src="main.js"></script>
+  </head>
+  <body ng-app="myname">
+    <div ng-controller="first as mf">
+		<!-- даем контролеру first короткое им mf, можно так не делать -->
+		{{mf.myvar}}
+		<span ng-bind="mf.myvar2"></span>
+		
+		<ul>
+			<li ng-repeat="repeatvar in mf.myarray" ng-bind="repeatvar"> 
+				
+			</li>
+		</ul>
+		
+		
+		<ul ng-repeat="repeatvar2 in mf.myarray3 track by $index" >
+			
+					<li > 
+						<ul>
+							<li ng-repeat="mitem in repeatvar2 track by $index" ng-bind="mitem | currency"> 
+					
+							</li>
+						</ul>
+				
+					</li>
+		</ul>
+		
+		<!-- -->
+		
+		
+		<button ng-click="mf.myarray4()">Click me</button>
+		
+		
+		
+		<img ng-src="img/{{mf.img2}}" />
+		
+		
+		<button ng-click="mf.nextimg()">Next Img</button>
+		
+		<hr />
+		{{mf.mee}}
+    </div>
+  </body>
+</html>

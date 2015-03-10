@@ -1,0 +1,26 @@
+<!doctype html>
+<html >
+  <head>
+  
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	
+    <script src="js/angular.min.js"></script>
+	<script src="js/main.js"></script>
+  </head>
+  <body ng-app="myshop">
+    
+	<div ng-controller="iControler as ic">
+		<ul ng-repeat="post in posts">
+			<li>{{post}}</li>
+		</ul>
+		
+	</div>
+	
+	
+	
+	  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
