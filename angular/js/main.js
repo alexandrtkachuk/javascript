@@ -1,44 +1,65 @@
-var App=angular.module('myshop',[]);
+var App=angular.module('myshop',['ui.router']);
 
 
 
 
-App.service('products', function() {
-  /*
-  $http.get('http://192.168.56.20/json/').
-    success(function(data, status, headers, config) {
-      $scope.posts = data;
-    }).
-    error(function(data, status, headers, config) {
-      // log error
-    });
-  */
+App.value('vCart', {
   
-	this.getItems= function($http, $scope) { 
-		  //var ret;
-		  $http.get('http://assembler.wc.lt/test/').
-		  success(function(data, status, headers, config) {
-			  $scope.posts = data;
-			}).
-			error(function(data, status, headers, config) {
-			  // log error
-			});
-		
-			
-	
-	}
-	
-  
+  total:0,
+  "arr": new Array()
 });
 
 
-App.controller('iControler',function(products,$http, $scope){
+
+App.service('sCart', function(vCart) {
+ 	
 	
-	
-	
+	this.addCart=function($scope,obj){
 		
-	products.getItems($http, $scope);
+		
+		//console.log(vCart.total);
+		
+		vCart.arr[obj.id]=obj;
+		vCart.total=0;
+		vCart.arr.forEach(function(entry) {
+			//console.log(entry);
+			if(null!==entry){
+				vCart.total+=(entry.count*entry.price);
+				}
+			
+		});	
+		
+			
+		//in store
+		window.localStorage.tai=JSON.stringify(vCart);
+	}
+  
+});
+
+//глобальная корзина
+App.controller('gCart',function($scope ,vCart){
+		
 	
 	
+	
+	
+	$scope.cart=vCart;
+	var t;
+	
+	if( typeof(window.localStorage.tai) == "string")
+		{
+			var arr= $.parseJSON('[' + window.localStorage.tai+ ']');
+			//console.log(vCart);
+			
+			if(arr!=0) {
+				vCart.total=arr[0].total;
+				vCart.arr=arr[0].arr;
+			}
+			//console.log(arr[0]);
+		}
+		
+	//window.localStorage.tai=0;
+	//
+	//window.localStorage.tai=JSON.stringify(vCart);
 	
 });

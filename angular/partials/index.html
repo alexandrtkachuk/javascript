@@ -1,0 +1,14 @@
+<!-- Example row of columns -->
+<div class="row"  >
+        <div class="col-md-4 tovar" ng-repeat="post in ic.me.value">
+          <h2 ng-bind="post.title"> </h2>
+          <p><img ng-src="img/full/{{post.image}}" /></p>
+          <p ng-bind="post.body">          </p>
+          <p>Цена: <span ng-bind="post.price | currency"></span></p>
+          <p>
+				<a class="btn btn-default" href="#/product/{{post.id}}" role="button">Подробней &raquo;</a>  
+				<button type="button" class="btn btn-danger" ng-click="ic.buy(post.price, post.id)" >Купить</button>
+		  </p
+        </div>
+        
+      </div>

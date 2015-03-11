@@ -5,19 +5,18 @@
 	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/custom.css" rel="stylesheet">
 	
-    <script src="js/angular.min.js"></script>
+	
+	<!--script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.min.js"></script-->
+    <script src="js/angular.min-1-1-5.js"></script>
+    <script src="js/angular-ui-router.min.js"></script>
 	<script src="js/main.js"></script>
+	<script src="js/route.js"></script>
+	<script src="js/controllers/controllers.js"></script>
+	<script src="js/controllers/cProduct.js"></script>
+	
+	
   </head>
   <body ng-app="myshop">
-		
-	 <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
-      <div class="container">
-        <h1>Добро пожаловать в наш магазин!</h1>
-        <p>Вы когда то слышали фразу "ЗА даньги можно купить все!" ?? И мы Вам докажим что за деньги можно купить реально все!!</p>
-       
-      </div>
-    </div>	
 		
 	<nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
@@ -31,31 +30,24 @@
           <a class="navbar-brand" href="index.html">Главная</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
-          <div class="mycard navbar-right">
-				<span> Card </span>
+          <div class="mycard navbar-right" ng-controller="gCart">
+				<span class="cart" ng-bind="cart.total  | currency">  </span>
           </div>
         </div><!--/.navbar-collapse -->
       </div>
     </nav>
 	
-
-    <div class="container" ng-controller="iControler as ic">
-      <!-- Example row of columns -->
-      <div class="row"  >
-        <div class="col-md-4 tovar" ng-repeat="post in posts">
-          <h2 ng-bind="post.title"> </h2>
-          <p><img ng-src="img/full/{{post.image}}" /></p>
-          <p ng-bind="post.body">          </p>
-          <p>Цена: <span ng-bind="post.price | currency"></span></p>
-          <p>
-				<a class="btn btn-default" href="#" role="button">Подробней &raquo;</a>  
-				<button type="button" class="btn btn-danger">Купить</button>
-		  </p>
-        </div>
-        
-      </div>
-		
-      <hr>
+	<hr />
+	<div class="jumbotron">
+		<div class="container"  ui-view >
+			
+     
+		</div>
+	</div>	<!-- end jumbotron -->
+	
+	
+	<div class="container">
+	
 	
       <footer>
         <p>&copy; Магазин органов	2015</p>
