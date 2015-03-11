@@ -1,0 +1,1885 @@
+<!DOCTYPE html>
+<!-- saved from url=(0454)http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#2 -->
+<html lang="en" dir="ltr" class="js no-touch localstorage sessionstorage contenteditable use-opacity-transitions"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Disqus Comments</title>
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+    <style>
+        html {
+            overflow: hidden;
+        }
+        
+    </style>
+
+<link rel="stylesheet" href="http://a.disquscdn.com/next/embed/styles/lounge.b497340c95a48dc0d45e5491da7d4798.css" media="all"><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="remote/config" src="config.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="common.bundle" src="common.58660000d438605bd1eb073f5eb16ba0.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="lounge.bundle" src="lounge.5a3c740c7da1416a8515625ba7ece7ce.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="http://www.google-analytics.com/ga.js" src="ga.js"></script><style id="css_1426070705435"></style><!--<base target="_parent">--><base href="." target="_parent"><script src="event.js" async="" charset="UTF-8"></script><link rel="stylesheet" href="http://a.disquscdn.com/next/embed/styles/discovery.8a8ce6377b76f4265f1d4b3986db93d8.css" media="all"><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="discovery/main" src="discovery.24e1c1fbee88aac6c814f854d29cf1cf.js"></script><script src="event(1).js" async="" charset="UTF-8"></script></head>
+<body>
+    
+    <!--[if lte IE 8]>
+<script src="//a.disquscdn.com/1425664697/build/vendor/ie8.js"></script>
+<![endif]-->
+<!--[if IE 9]>
+<script src="//a.disquscdn.com/1425664697/build/vendor/ie9.js"></script>
+<![endif]-->
+
+    
+<script type="text/json" id="disqus-urls">{
+    "root":"//disqus.com",
+    "next":"//a.disquscdn.com/next/current/embed"
+}</script>
+
+    
+
+    <div id="error" style="display:none; text-align: center">
+        <p>We were unable to load Disqus. If you are a moderator please see our <a href="https://docs.disqus.com/help/83/"> troubleshooting guide</a>. </p>
+    </div>
+
+    
+    <script type="text/json" id="disqus-forumData">{"session":{"canModerate":false,"audienceSyncVerified":false,"canReply":true,"mustVerifyEmail":false},"features":{},"forum":{"category":"","description":null,"founder":"26760227","settings":{"canEnableSponsoredComments":false,"discoveryVariant":"promoted","allowAnonPost":false,"allowMedia":true,"moderatorText":"","typeface":"auto","disable3rdPartyTrackers":false,"promotedDiscoveryEnabled":true,"allowAnonVotes":true,"discoveryMax":false,"ssoRequired":false,"discoveryLocked":false,"audienceSyncEnabled":false,"hasCustomAvatar":false,"organicDiscoveryEnabled":true,"discoverySettingsUrl":"https://davidsalter.disqus.com/admin/settings/ads/","discoveryThumbnailsEnabled":false,"colorScheme":"auto","isVIP":false,"sponsoredCommentsEnabled":false,"linkAffiliationEnabled":true},"url":"http://davidsalter.com","guidelines":null,"favicon":{"permalink":"http://disqus.com/api/forums/favicons/davidsalter.jpg","cache":"//a.disquscdn.com/uploads/forums/248/5550/favicon.png"},"language":"en","avatar":{"small":{"permalink":"http://disqus.com/api/forums/avatars/davidsalter.jpg?size=32","cache":"//a.disquscdn.com/1425664697/images/noavatar32.png"},"large":{"permalink":"http://disqus.com/api/forums/avatars/davidsalter.jpg?size=92","cache":"//a.disquscdn.com/1425664697/images/noavatar92.png"}},"pk":2485550,"signedUrl":"http://disq.us/?url=http%3A%2F%2Fdavidsalter.com&key=we1XrudRAqlyj7qRKShlog","raw_guidelines":null,"id":"davidsalter","channel":null,"name":"David Salter's Blog"}}</script>
+
+    
+    <script type="text/json" id="disqus-threadData">{"cursor":{"hasPrev":false,"total":14,"prev":null,"hasNext":false,"next":"1:0:0"},"code":0,"response":{"lastModified":1420832578,"posts":[{"parent":null,"isHighlighted":false,"isFlagged":false,"thread":"3402198632","forum":"davidsalter","author":{"username":"michalc","about":"","name":"michalc","disable3rdPartyTrackers":false,"url":"","joinedAt":"2008-07-04T09:20:13","rep":1.239377,"profileUrl":"https://disqus.com/by/michalc/","reputation":1.239377,"location":"","isPrivate":false,"isPrimary":true,"isAnonymous":false,"id":"55588","avatar":{"small":{"permalink":"http://disqus.com/api/users/avatars/michalc.jpg","cache":"//a.disquscdn.com/1425664697/images/noavatar32.png"},"isCustom":false,"permalink":"http://disqus.com/api/users/avatars/michalc.jpg","cache":"//a.disquscdn.com/1425664697/images/noavatar92.png","large":{"permalink":"http://disqus.com/api/users/avatars/michalc.jpg","cache":"//a.disquscdn.com/1425664697/images/noavatar92.png"}}},"media":[],"isDeleted":false,"isApproved":true,"dislikes":0,"raw_message":"I notice getFruitsAsync takes a callback parameter. Would a \"more Angular\" way of doing it be to just return the result of the http.get call, which is a promise object, so the calling function can handle the callback, along with any error conditions?","isSpam":false,"depth":0,"numReports":0,"likes":10,"isEdited":false,"message":"\u003cp>I notice getFruitsAsync takes a callback parameter. Would a \"more Angular\" way of doing it be to just return the result of the http.get call, which is a promise object, so the calling function can handle the callback, along with any error conditions?\u003c/p>","id":"1026074723","createdAt":"2013-09-02T06:20:15","points":10},{"parent":null,"isHighlighted":false,"isFlagged":false,"thread":"3402198632","forum":"davidsalter","author":{"name":"Guest","url":"","profileUrl":"","emailHash":"","avatar":{"small":{"permalink":"//a.disquscdn.com/1425664697/images/noavatar32.png","cache":"//a.disquscdn.com/1425664697/images/noavatar32.png"},"large":{"permalink":"//a.disquscdn.com/1425664697/images/noavatar92.png","cache":"//a.disquscdn.com/1425664697/images/noavatar92.png"},"permalink":"//a.disquscdn.com/1425664697/images/noavatar92.png","cache":"//a.disquscdn.com/1425664697/images/noavatar92.png"},"isAnonymous":true},"media":[{"forum":"davidsalter","thumbnailUrl":"//a.disquscdn.com/uploads/mediaembed/images/834/7338/original.jpg","description":"","thread":"3402198632","title":"","url":"//a.disquscdn.com/uploads/mediaembed/images/834/7338/original.jpg","mediaType":"2","html":"","location":"//a.disquscdn.com/uploads/mediaembed/images/834/7338/original.jpg","resolvedUrl":"//a.disquscdn.com/uploads/mediaembed/images/834/7338/original.jpg","post":"1239291850","thumbnailURL":"//a.disquscdn.com/uploads/mediaembed/images/834/7338/original.jpg","type":"5","metadata":{"create_method":"preview","thumbnail":"mediaembed/images/834/7338/original.jpg"}}],"isDeleted":false,"isApproved":true,"dislikes":0,"raw_message":".............","isSpam":false,"depth":0,"numReports":0,"likes":0,"isEdited":false,"message":"\u003cp>.............\u003c/p>","id":"1239291850","createdAt":"2014-02-11T05:24:10","points":0},{"parent":null,"isHighlighted":false,"isFlagged":false,"thread":"3402198632","forum":"davidsalter","author":{"name":"Guest","url":"","profileUrl":"","emailHash":"","avatar":{"small":{"permalink":"//a.disquscdn.com/1425664697/images/noavatar32.png","cache":"//a.disquscdn.com/1425664697/images/noavatar32.png"},"large":{"permalink":"//a.disquscdn.com/1425664697/images/noavatar92.png","cache":"//a.disquscdn.com/1425664697/images/noavatar92.png"},"permalink":"//a.disquscdn.com/1425664697/images/noavatar92.png","cache":"//a.disquscdn.com/1425664697/images/noavatar92.png"},"isAnonymous":true},"media":[],"isDeleted":false,"isApproved":true,"dislikes":0,"raw_message":"hi............","isSpam":false,"depth":0,"numReports":0,"likes":0,"isEdited":true,"message":"\u003cp>hi............\u003c/p>","id":"1239290441","createdAt":"2014-02-11T05:21:49","points":0},{"parent":1239290441,"isHighlighted":false,"isFlagged":true,"thread":"3402198632","forum":"davidsalter","author":{"name":"Guest","url":"","profileUrl":"","emailHash":"","avatar":{"small":{"permalink":"//a.disquscdn.com/1425664697/images/noavatar32.png","cache":"//a.disquscdn.com/1425664697/images/noavatar32.png"},"large":{"permalink":"//a.disquscdn.com/1425664697/images/noavatar92.png","cache":"//a.disquscdn.com/1425664697/images/noavatar92.png"},"permalink":"//a.disquscdn.com/1425664697/images/noavatar92.png","cache":"//a.disquscdn.com/1425664697/images/noavatar92.png"},"isAnonymous":true},"media":[],"isDeleted":false,"isApproved":true,"dislikes":0,"raw_message":"thanks...................","isSpam":false,"depth":1,"numReports":1,"likes":0,"isEdited":false,"message":"\u003cp>thanks...................\u003c/p>","id":"1239291047","createdAt":"2014-02-11T05:22:49","points":0},{"parent":1239290441,"isHighlighted":false,"isFlagged":false,"thread":"3402198632","forum":"davidsalter","author":{"name":"Guest","url":"","profileUrl":"","emailHash":"","avatar":{"small":{"permalink":"//a.disquscdn.com/1425664697/images/noavatar32.png","cache":"//a.disquscdn.com/1425664697/images/noavatar32.png"},"large":{"permalink":"//a.disquscdn.com/1425664697/images/noavatar92.png","cache":"//a.disquscdn.com/1425664697/images/noavatar92.png"},"permalink":"//a.disquscdn.com/1425664697/images/noavatar92.png","cache":"//a.disquscdn.com/1425664697/images/noavatar92.png"},"isAnonymous":true},"media":[],"isDeleted":false,"isApproved":true,"dislikes":0,"raw_message":"thanks","isSpam":false,"depth":1,"numReports":0,"likes":0,"isEdited":false,"message":"\u003cp>thanks\u003c/p>","id":"1239290749","createdAt":"2014-02-11T05:22:23","points":0},{"parent":1239290749,"isHighlighted":false,"isFlagged":false,"thread":"3402198632","forum":"davidsalter","author":{"name":"Guest","url":"","profileUrl":"","emailHash":"","avatar":{"small":{"permalink":"//a.disquscdn.com/1425664697/images/noavatar32.png","cache":"//a.disquscdn.com/1425664697/images/noavatar32.png"},"large":{"permalink":"//a.disquscdn.com/1425664697/images/noavatar92.png","cache":"//a.disquscdn.com/1425664697/images/noavatar92.png"},"permalink":"//a.disquscdn.com/1425664697/images/noavatar92.png","cache":"//a.disquscdn.com/1425664697/images/noavatar92.png"},"isAnonymous":true},"media":[],"isDeleted":false,"isApproved":true,"dislikes":0,"raw_message":"thanks.....","isSpam":false,"depth":2,"numReports":0,"likes":0,"isEdited":false,"message":"\u003cp>thanks.....\u003c/p>","id":"1239290943","createdAt":"2014-02-11T05:22:39","points":0},{"parent":null,"isHighlighted":false,"isFlagged":false,"thread":"3402198632","forum":"davidsalter","author":{"username":"webmandman","about":"","name":"Daniel Mejia","disable3rdPartyTrackers":false,"url":"","joinedAt":"2014-01-30T22:10:46","rep":1.235266,"profileUrl":"https://disqus.com/by/webmandman/","reputation":1.235266,"location":"","isPrivate":false,"isPrimary":true,"isAnonymous":false,"id":"92901338","avatar":{"small":{"permalink":"http://disqus.com/api/users/avatars/webmandman.jpg","cache":"//a.disquscdn.com/uploads/users/9290/1338/avatar32.jpg?1416436044"},"isCustom":true,"permalink":"http://disqus.com/api/users/avatars/webmandman.jpg","cache":"//a.disquscdn.com/uploads/users/9290/1338/avatar92.jpg?1416436044","large":{"permalink":"http://disqus.com/api/users/avatars/webmandman.jpg","cache":"//a.disquscdn.com/uploads/users/9290/1338/avatar92.jpg?1416436044"}}},"media":[],"isDeleted":false,"isApproved":true,"dislikes":0,"raw_message":"David,\n\nI seriously just started looking into angular, I haven't even finished the phones tutorial. But looking into angular two days ago and finding this post today was perfect timing. So thanks.","isSpam":false,"depth":0,"numReports":0,"likes":0,"isEdited":false,"message":"\u003cp>David,\u003c/p>\u003cp>I seriously just started looking into angular, I haven't even finished the phones tutorial. But looking into angular two days ago and finding this post today was perfect timing. So thanks.\u003c/p>","id":"1224451341","createdAt":"2014-01-30T22:18:40","points":0},{"parent":null,"isHighlighted":false,"isFlagged":false,"thread":"3402198632","forum":"davidsalter","author":{"username":"disqus_Uwsm5w7Doy","about":"","name":"Andy Z","disable3rdPartyTrackers":false,"url":"","joinedAt":"2014-01-11T21:22:13","rep":1.232124,"profileUrl":"https://disqus.com/by/disqus_Uwsm5w7Doy/","reputation":1.232124,"location":"","isPrivate":false,"isPrimary":true,"isAnonymous":false,"id":"90218432","avatar":{"small":{"permalink":"http://disqus.com/api/users/avatars/disqus_Uwsm5w7Doy.jpg","cache":"//a.disquscdn.com/uploads/users/9021/8432/avatar32.jpg?1389475340"},"isCustom":true,"permalink":"http://disqus.com/api/users/avatars/disqus_Uwsm5w7Doy.jpg","cache":"//a.disquscdn.com/uploads/users/9021/8432/avatar92.jpg?1389475340","large":{"permalink":"http://disqus.com/api/users/avatars/disqus_Uwsm5w7Doy.jpg","cache":"//a.disquscdn.com/uploads/users/9021/8432/avatar92.jpg?1389475340"}}},"media":[],"isDeleted":false,"isApproved":true,"dislikes":0,"raw_message":"Thank you thank you thank you.  I spent all day reading stackoverflow posts and trying to learn up on factories and services and yada yada yada.  All I wanted was one useful example of how to make a factory around the $http service that I already had in my controller and help it all make sense!\n\nThe key here, is that when defining your controller you changed the second argument which was $http (when there was no factory and the $http was used directly in the controllwer) into your factory instance fruitsFactory.","isSpam":false,"depth":0,"numReports":0,"likes":0,"isEdited":false,"message":"\u003cp>Thank you thank you thank you.  I spent all day reading stackoverflow posts and trying to learn up on factories and services and yada yada yada.  All I wanted was one useful example of how to make a factory around the $http service that I already had in my controller and help it all make sense!\u003c/p>\u003cp>The key here, is that when defining your controller you changed the second argument which was $http (when there was no factory and the $http was used directly in the controllwer) into your factory instance fruitsFactory.\u003c/p>","id":"1196642427","createdAt":"2014-01-11T21:22:19","points":0},{"parent":null,"isHighlighted":false,"isFlagged":false,"thread":"3402198632","forum":"davidsalter","author":{"username":"joshblaha","about":"","name":"Josh Blaha","disable3rdPartyTrackers":false,"url":"http://blahalifephotography.com/","joinedAt":"2013-05-29T15:42:12","rep":1.233796,"profileUrl":"https://disqus.com/by/joshblaha/","reputation":1.233796,"location":"","isPrivate":false,"isPrimary":true,"isAnonymous":false,"id":"53262110","avatar":{"small":{"permalink":"http://disqus.com/api/users/avatars/joshblaha.jpg","cache":"//a.disquscdn.com/uploads/users/5326/2110/avatar32.jpg?1369842133"},"isCustom":true,"permalink":"http://disqus.com/api/users/avatars/joshblaha.jpg","cache":"//a.disquscdn.com/uploads/users/5326/2110/avatar92.jpg?1369842133","large":{"permalink":"http://disqus.com/api/users/avatars/joshblaha.jpg","cache":"//a.disquscdn.com/uploads/users/5326/2110/avatar92.jpg?1369842133"}}},"media":[],"isDeleted":false,"isApproved":true,"dislikes":0,"raw_message":"Thank you so much for this post! I have been looking for a simple example like this for hours. All of the examples I've seen except this one don't work. So, thanks!","isSpam":false,"depth":0,"numReports":0,"likes":0,"isEdited":false,"message":"\u003cp>Thank you so much for this post! I have been looking for a simple example like this for hours. All of the examples I've seen except this one don't work. So, thanks!\u003c/p>","id":"1191093611","createdAt":"2014-01-07T21:02:59","points":0},{"parent":null,"isHighlighted":false,"isFlagged":false,"thread":"3402198632","forum":"davidsalter","author":{"username":"johnstew","about":"","name":"johnstew","disable3rdPartyTrackers":false,"url":"","joinedAt":"2012-08-28T16:50:46","rep":1.237924,"profileUrl":"https://disqus.com/by/johnstew/","reputation":1.237924,"location":"","isPrivate":false,"isPrimary":true,"isAnonymous":false,"id":"31267559","avatar":{"small":{"permalink":"http://disqus.com/api/users/avatars/johnstew.jpg","cache":"//a.disquscdn.com/1425664697/images/noavatar32.png"},"isCustom":false,"permalink":"http://disqus.com/api/users/avatars/johnstew.jpg","cache":"//a.disquscdn.com/1425664697/images/noavatar92.png","large":{"permalink":"http://disqus.com/api/users/avatars/johnstew.jpg","cache":"//a.disquscdn.com/1425664697/images/noavatar92.png"}}},"media":[],"isDeleted":false,"isApproved":true,"dislikes":0,"raw_message":"Been looking for an article like this for awhile now. Glad I found it. I assume that this is the proper way to handle Reqeusts via AJAX. I know you are not suppose to use the controller for DOM manipulation and things of that nature but I suppose that making these Requests are okay to handle in the controllers via a Factory, Correct or No?","isSpam":false,"depth":0,"numReports":0,"likes":0,"isEdited":false,"message":"\u003cp>Been looking for an article like this for awhile now. Glad I found it. I assume that this is the proper way to handle Reqeusts via AJAX. I know you are not suppose to use the controller for DOM manipulation and things of that nature but I suppose that making these Requests are okay to handle in the controllers via a Factory, Correct or No?\u003c/p>","id":"1096426887","createdAt":"2013-10-25T15:11:35","points":0},{"parent":null,"isHighlighted":false,"isFlagged":false,"thread":"3402198632","forum":"davidsalter","author":{"username":"jeremylikness","about":"","name":"Jeremy Likness","disable3rdPartyTrackers":false,"url":"","joinedAt":"2013-09-05T22:05:31","rep":1.233992,"profileUrl":"https://disqus.com/by/jeremylikness/","reputation":1.233992,"location":"","isPrivate":false,"isPrimary":true,"isAnonymous":false,"id":"71671920","avatar":{"small":{"permalink":"http://disqus.com/api/users/avatars/jeremylikness.jpg","cache":"//a.disquscdn.com/uploads/users/7167/1920/avatar32.jpg?1378418733"},"isCustom":true,"permalink":"http://disqus.com/api/users/avatars/jeremylikness.jpg","cache":"//a.disquscdn.com/uploads/users/7167/1920/avatar92.jpg?1378418733","large":{"permalink":"http://disqus.com/api/users/avatars/jeremylikness.jpg","cache":"//a.disquscdn.com/uploads/users/7167/1920/avatar92.jpg?1378418733"}}},"media":[],"isDeleted":false,"isApproved":true,"dislikes":0,"raw_message":"I agree. If you are just binding the result to the $scope object, angular is smart enough to understand a promise and defer the promise then bind the data when it appears. So, instead of doing a callback, you can literally just return the promise itself and set it to the $scope, like this: $scope.fruits = fruitsFactory.getFruitsAsync() and then in the factory return $http.get('fruits.json');","isSpam":false,"depth":0,"numReports":0,"likes":0,"isEdited":false,"message":"\u003cp>I agree. If you are just binding the result to the $scope object, angular is smart enough to understand a promise and defer the promise then bind the data when it appears. So, instead of doing a callback, you can literally just return the promise itself and set it to the $scope, like this: $scope.fruits = fruitsFactory.getFruitsAsync() and then in the factory return $http.get('fruits.json');\u003c/p>","id":"1031457682","createdAt":"2013-09-05T22:05:38","points":0},{"parent":1031457682,"isHighlighted":false,"isFlagged":false,"thread":"3402198632","forum":"davidsalter","author":{"username":"vohof","about":"","name":"David","disable3rdPartyTrackers":false,"url":"","joinedAt":"2013-01-11T16:02:00","rep":1.223283,"profileUrl":"https://disqus.com/by/vohof/","reputation":1.223283,"location":"","isPrivate":false,"isPrimary":true,"isAnonymous":false,"id":"40783378","avatar":{"small":{"permalink":"http://disqus.com/api/users/avatars/vohof.jpg","cache":"//a.disquscdn.com/uploads/users/4078/3378/avatar32.jpg?1422415076"},"isCustom":true,"permalink":"http://disqus.com/api/users/avatars/vohof.jpg","cache":"//a.disquscdn.com/uploads/users/4078/3378/avatar92.jpg?1422415076","large":{"permalink":"http://disqus.com/api/users/avatars/vohof.jpg","cache":"//a.disquscdn.com/uploads/users/4078/3378/avatar92.jpg?1422415076"}}},"media":[],"isDeleted":false,"isApproved":true,"dislikes":0,"raw_message":"but how will you handle errors?","isSpam":false,"depth":1,"numReports":0,"likes":2,"isEdited":false,"message":"\u003cp>but how will you handle errors?\u003c/p>","id":"1098538243","createdAt":"2013-10-27T16:34:08","points":2},{"parent":1098538243,"isHighlighted":false,"isFlagged":false,"thread":"3402198632","forum":"davidsalter","author":{"username":"disqus_p5gWR8V4AG","about":"","name":"Mike McNeil","disable3rdPartyTrackers":false,"url":"","joinedAt":"2013-05-31T04:00:32","rep":1.2286089999999998,"profileUrl":"https://disqus.com/by/disqus_p5gWR8V4AG/","reputation":1.2286089999999998,"location":"","isPrivate":false,"isPrimary":true,"isAnonymous":false,"id":"53623011","avatar":{"small":{"permalink":"http://disqus.com/api/users/avatars/disqus_p5gWR8V4AG.jpg","cache":"//a.disquscdn.com/uploads/users/5362/3011/avatar32.jpg?1421603856"},"isCustom":true,"permalink":"http://disqus.com/api/users/avatars/disqus_p5gWR8V4AG.jpg","cache":"//a.disquscdn.com/uploads/users/5362/3011/avatar92.jpg?1421603856","large":{"permalink":"http://disqus.com/api/users/avatars/disqus_p5gWR8V4AG.jpg","cache":"//a.disquscdn.com/uploads/users/5362/3011/avatar92.jpg?1421603856"}}},"media":[],"isDeleted":false,"isApproved":true,"dislikes":0,"raw_message":"You'd have to do the promise shit I guess.. https://github.com/kriskowal/q#handling-errors \n\nSometimes I just want to be able to do `q.prenuptial(cb)`\n\nAnyways, great article, thanks!","isSpam":false,"depth":2,"numReports":0,"likes":0,"isEdited":true,"message":"\u003cp>You'd have to do the promise shit I guess.. \u003ca href=\"https://github.com/kriskowal/q#handling-errors\" rel=\"nofollow\">https://github.com/kriskowal/q...\u003c/a>\u003c/p>\u003cp>Sometimes I just want to be able to do `q.prenuptial(cb)`\u003c/p>\u003cp>Anyways, great article, thanks!\u003c/p>","id":"1195634340","createdAt":"2014-01-10T22:31:23","points":0},{"parent":1195634340,"isHighlighted":false,"isFlagged":false,"thread":"3402198632","forum":"davidsalter","author":{"username":"normchristensen","about":"","name":"not-here-now","disable3rdPartyTrackers":false,"url":"","joinedAt":"2013-12-06T19:23:31","rep":1.232124,"profileUrl":"https://disqus.com/by/normchristensen/","reputation":1.232124,"location":"","isPrivate":false,"isPrimary":true,"isAnonymous":false,"id":"84859129","avatar":{"small":{"permalink":"http://disqus.com/api/users/avatars/normchristensen.jpg","cache":"//a.disquscdn.com/1425664697/images/noavatar32.png"},"isCustom":false,"permalink":"http://disqus.com/api/users/avatars/normchristensen.jpg","cache":"//a.disquscdn.com/1425664697/images/noavatar92.png","large":{"permalink":"http://disqus.com/api/users/avatars/normchristensen.jpg","cache":"//a.disquscdn.com/1425664697/images/noavatar92.png"}}},"media":[],"isDeleted":false,"isApproved":true,"dislikes":0,"raw_message":"In terms of handling errors - have a look at this article - it's a working example of getting an error message from the factory into the controller.\n\nhttp://sravi-kiran.blogspot.com/2013/03/MovingAjaxCallsToACustomServiceInAngularJS.html","isSpam":false,"depth":3,"numReports":0,"likes":0,"isEdited":false,"message":"\u003cp>In terms of handling errors - have a look at this article - it's a working example of getting an error message from the factory into the controller.\u003c/p>\u003cp>\u003ca href=\"http://sravi-kiran.blogspot.com/2013/03/MovingAjaxCallsToACustomServiceInAngularJS.html\" rel=\"nofollow\">http://sravi-kiran.blogspot.co...\u003c/a>\u003c/p>","id":"1220858682","createdAt":"2014-01-28T23:49:19","points":0}],"thread":{"feed":"https://davidsalter.disqus.com/using_angularjs_factories_to_get_remote_data_62/latest.rss","uploadAdd":"//davidsalter.disqus.com/thread/using_angularjs_factories_to_get_remote_data_62/async_media_upload/","identifiers":["302 http://davidsalter.com/?p=302","http://www.davidsalter.com/2013/08/16/using-angular-dot-js-factories-to-get-remote-data/"],"dislikes":0,"likes":0,"message":"","id":"3402198632","createdAt":"2015-01-08T17:15:49","category":"2522538","author":"26760227","userScore":0,"moderators":[26760227],"signedLink":"http://disq.us/?url=http%3A%2F%2Fdavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html&key=HSTfqija0J8rLTgbu53NMA","isDeleted":false,"hasStreaming":false,"uploadRemove":"//davidsalter.disqus.com/thread/using_angularjs_factories_to_get_remote_data_62/async_media_remove/","raw_message":"","isClosed":false,"link":"http://davidsalter.com/2013/08/using-angular-dot-js-factories-to-get-remote-data.html","slug":"using_angularjs_factories_to_get_remote_data_62","forum":"davidsalter","clean_title":"Using Angular.js Factories To Get Remote Data","posts":14,"userSubscription":false,"title":"Using Angular.js Factories To Get Remote Data","highlightedPost":null}},"order":"popular"}</script>
+
+    
+
+    <div id="fixed-content"></div>
+
+    <script src="lounge.load.10cfd99a1042e73c969e091b48e255d7.js" id="bootstrap-script" data-app="lounge"></script>
+
+
+<div id="layout" data-tracking-area="layout">
+
+<div id="discovery-top" data-tracking-area="discovery-north"></div>
+
+<div id="onboard" data-tracking-area="onboard"></div>
+
+<div id="highlighted-post" data-tracking-area="highlighted" class="highlighted-post" style="display: none;"></div>
+
+<header id="main-nav" data-tracking-area="main-nav">
+<nav class="nav nav-primary">
+<ul>
+<li class="tab-conversation active">
+<a href="https://disqus.com/home/discussions/davidsalter/using_angularjs_factories_to_get_remote_data_62/" data-role="post-count" class="publisher-nav-color" data-nav="conversation"><span class="comment-count">
+14 comments
+</span>
+
+<span class="comment-count-placeholder">
+Comments
+</span>
+</a>
+</li>
+<li class="tab-community">
+<a href="https://disqus.com/home/forums/davidsalter/" class="publisher-nav-color" data-action="community-sidebar" data-forum="davidsalter" id="community-tab">
+<span class="community-name">
+<strong>David Salter's Blog</strong>
+
+</span>
+
+<strong class="community-name-placeholder">Community</strong>
+</a>
+</li>
+<li class="dropdown user-menu" data-role="logout"><a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" class="dropdown-toggle" data-toggle="dropdown">
+<span class="dropdown-toggle-wrapper">
+
+<span>
+Login
+</span>
+
+</span> <span class="caret"></span>
+</a>
+<ul class="dropdown-menu">
+
+
+<li>
+<a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="auth:disqus">Disqus</a>
+</li>
+<li>
+<a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="auth:facebook">Facebook</a>
+</li>
+<li>
+<a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="auth:twitter">Twitter</a>
+</li>
+<li>
+<a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="auth:google">Google</a>
+</li>
+
+
+
+</ul>
+</li>
+<li class="notification-menu" data-role="notification-menu"><a href="https://disqus.com/home/inbox/" class="notification-container" data-nav="dashboard">
+<span class="notification-icon icon-comment"></span>
+<span class="notification-count" data-role="notification-count"></span>
+</a>
+</li>
+</ul>
+</nav>
+</header>
+
+
+
+<section id="conversation" data-role="main" data-tracking-area="main">
+<div class="nav nav-secondary" data-tracking-area="secondary-nav">
+<ul>
+<li id="recommend-button" class="recommend">
+<div class="thread-likes"><a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="recommend" title="Recommend this discussion" class="">
+<span class="icon-heart"></span>
+<span class="label label-default">Recommend</span>
+<span class="label label-recommended">Recommended</span>
+</a>
+</div></li>
+<li id="thread-share-menu" class="dropdown share-menu">
+<a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" class="dropdown-toggle" data-toggle="dropdown" title="Share">
+<span class="icon-export"></span>
+<span class="label">Share</span>
+</a>
+<ul class="share-menu dropdown-menu">
+<li class="share">Share this discussion on
+<ul>
+<li class="twitter">
+<a data-action="share:twitter" href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#">Twitter</a>
+</li>
+<li class="facebook">
+<a data-action="share:facebook" href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#">Facebook</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li data-role="post-sort" class="dropdown sorting pull-right">
+<a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" class="dropdown-toggle" data-nav="conversation" data-toggle="dropdown">
+Sort by Best
+
+
+<span class="caret"></span>
+</a>
+<ul class="dropdown-menu pull-right">
+<li class="selected">
+<a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="sort" data-sort="popular">Best<i aria-hidden="true" class="icon-checkmark"></i></a>
+</li>
+
+<li>
+<a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="sort" data-sort="desc">Newest<i aria-hidden="true" class="icon-checkmark"></i></a>
+</li>
+
+<li>
+<a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="sort" data-sort="asc">Oldest<i aria-hidden="true" class="icon-checkmark"></i></a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+
+<div id="posts">
+<div id="form"><form class="reply">
+<div class="postbox">
+<div role="alert"></div>
+<div class="avatar">
+<span class="user">
+<img data-role="user-avatar" src="noavatar92.b677f9ddbee6f4bb22f473ae3bd61b85.png" alt="Avatar">
+</span>
+</div>
+
+<div class="textarea-wrapper" data-role="textarea" dir="auto"><div><span class="placeholder">Join the discussion…</span><div class="textarea" tabindex="0" role="textbox" aria-multiline="true" contenteditable="true" data-role="editable" aria-label="Join the discussion…" style="overflow: auto; max-height: 350px;"><p><br></p></div><div style="display: none;"><ul class="suggestions">
+<li class="header">
+<h5>in this conversation</h5>
+</li>
+</ul>
+</div></div>
+<div data-role="drag-drop-placeholder" class="media-drag-hover" style="display: none">
+<div class="drag-text">
+⬇ Drag and drop your images here to upload them.
+</div>
+</div>
+<div class="media-preview empty" data-role="media-preview">
+<ul data-role="media-legacy-list"></ul>
+<ul data-role="media-progress-list"></ul>
+<ul data-role="media-rich-list"></ul>
+<div class="media-expanded empty" data-role="media-preview-expanded">
+<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-role="media-preview-expanded-image" alt="Media preview placeholder">
+</div>
+</div>
+<div class="edit-alert" role="postbox-alert"></div>
+<div class="post-actions">
+<ul class="wysiwyg">
+<li>
+<a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" tabindex="-1" data-action="attach" class="attach" title="Upload Images"><span>Attach</span></a>
+<input type="file" data-role="media-upload" tabindex="-1" class="regular" accept="image/*">
+</li>
+</ul>
+</div>
+</div>
+
+<div data-role="login-form"><div><section class="auth-section logged-out">
+<div class="connect">
+<h6>Sign in with</h6>
+<ul data-role="login-menu" class="services login-buttons">
+
+
+<li class="auth-disqus">
+<button type="button" data-action="auth:disqus" title="Disqus"><i class="icon-disqus"></i></button>
+</li>
+<li class="auth-facebook">
+<button type="button" data-action="auth:facebook" title="Facebook"><i class="icon-facebook-circle"></i></button>
+</li>
+<li class="auth-twitter">
+<button type="button" data-action="auth:twitter" title="Twitter"><i class="icon-twitter-circle"></i></button>
+</li>
+<li class="auth-google">
+<button type="button" data-action="auth:google" title="Google"><i class="icon-google-plus-circle"></i></button>
+</li>
+</ul>
+</div>
+<div class="guest">
+<h6 class="guest-form-title">
+or register with Disqus
+</h6>
+
+<div class="what-is-disqus help-icon">
+<div id="rules" class="tooltip show">
+<h3>Disqus is a conversation network</h3>
+<ul>
+<li><span>Disqus never moderates or censors. The rules on this community are its own.</span></li>
+<li><span>Your email is safe with us. It's only used for moderation and optional notifications.</span></li>
+<li><span>Don't be a jerk or do anything illegal. Everything is easier that way.</span></li>
+</ul>
+<p class="clearfix"><a href="https://docs.disqus.com/kb/terms-and-policies/" class="btn btn-small" target="_blank">Read full terms and conditions</a></p>
+</div>
+</div>
+
+<p class="input-wrapper">
+<input dir="auto" type="text" placeholder="Name" name="display_name" id="view199_display_name" maxlength="30">
+</p>
+
+<div class="guest-details " data-role="guest-details">
+<p class="input-wrapper">
+<input dir="auto" type="email" placeholder="Email" name="email" id="view199_email">
+</p>
+
+<p class="input-wrapper">
+<input dir="auto" type="password" placeholder="Password" name="password" id="view199_password">
+</p>
+<input type="checkbox" name="author-guest" style="display:none">
+</div>
+</div>
+<div class="proceed">
+<button type="submit" class="btn submit" aria-label="Next"><span class="icon-proceed"></span></button>
+</div>
+</section>
+
+</div></div>
+</div>
+</form></div>
+
+<button class="alert realtime" style="display: none;" data-role="realtime-notification">
+</button>
+
+<div id="no-posts" style="display: none;">Be the first to comment.</div>
+
+<ul id="post-list" class="post-list"><li class="post" id="post-1026074723"><div role="alert"></div>
+<div data-role="post-content" class="post-content">
+<ul class="post-menu dropdown" data-role="menu">
+<li class="collapse">
+<a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="collapse" title="Collapse"><span>−</span></a>
+</li>
+<li class="expand">
+<a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="collapse" title="Expand"><span>+</span></a>
+</li>
+
+<li class="" role="menu">
+<a class="dropdown-toggle" href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="flag" data-role="flag" title="Flag as inappropriate">
+<i aria-hidden="true" class="icon icon-flag"></i>
+</a>
+</li>
+</ul>
+<div class="indicator"></div>
+
+<div class="avatar hovercard">
+<a href="https://disqus.com/by/michalc/" class="user" data-action="profile" data-username="michalc">
+<img data-role="user-avatar" data-user="55588" src="noavatar92.png" alt="Avatar">
+</a>
+</div>
+<div class="post-body">
+<header>
+<span class="post-byline">
+<span class="author publisher-anchor-color"><a href="https://disqus.com/by/michalc/" data-action="profile" data-username="michalc" data-role="username">michalc</a></span>
+
+</span>
+
+<span class="post-meta">
+<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+<a href="http://webcache.googleusercontent.com/search?q=cache:u1tWk_w5f-QJ:davidsalter.com/2013/08/using-angular-dot-js-factories-to-get-remote-data.html+&cd=1&hl=ru&ct=clnk&gl=ua#comment-1026074723" data-role="relative-time" class="time-ago" title="Monday, September 2, 2013 9:20 AM">2 years ago</a>
+</span>
+
+</header>
+
+<div class="post-body-inner">
+<div class="post-message-container" data-role="message-container">
+<div class="publisher-anchor-color" data-role="message-content">
+<div class="post-message " data-role="message" dir="auto">
+<p>I notice getFruitsAsync takes a callback parameter. Would a "more Angular" way of doing it be to just return the result of the http.get call, which is a promise object, so the calling function can handle the callback, along with any error conditions?</p>
+</div>
+
+<span class="post-media"><ul data-role="post-media-list"></ul></span>
+</div>
+</div>
+<a class="see-more hidden" title="see more" data-action="see-more">see more</a>
+</div>
+
+<footer>
+<menu>
+
+<li class="voting" data-role="voting">
+<a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" class="vote-up  count-10" data-action="upvote" title="">
+
+<span class="updatable count" data-role="likes">10</span>
+<span class="control"><i aria-hidden="true" class="icon icon-arrow-2"></i></span>
+</a>
+<span role="button" class="vote-down  count-0" data-action="downvote" title="Vote down">
+
+<span class="control"><i aria-hidden="true" class="icon icon-arrow"></i></span>
+</span>
+</li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="reply" data-role="reply-link">
+<a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="reply">
+<i class="icon icon-mobile icon-reply"></i><span class="text">Reply</span></a></li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="share">
+<a class="toggle"><i class="icon icon-mobile icon-share"></i><span class="text">Share ›</span></a>
+<ul>
+<li class="twitter"><a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="share:twitter">Twitter</a></li>
+<li class="facebook"><a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="share:facebook">Facebook</a></li>
+<li class="link"><a href="http://webcache.googleusercontent.com/search?q=cache:u1tWk_w5f-QJ:davidsalter.com/2013/08/using-angular-dot-js-factories-to-get-remote-data.html+&cd=1&hl=ru&ct=clnk&gl=ua#comment-1026074723">Link</a></li>
+</ul>
+</li>
+
+<li class="realtime" data-role="realtime-notification:1026074723">
+<span style="display:none;" class="realtime-replies"></span>
+<a style="display:none;" href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" class="btn btn-small"></a>
+</li>
+
+</menu>
+</footer>
+</div>
+
+<div data-role="blacklist-form"></div>
+<div class="reply-form-container" data-role="reply-form"></div>
+</div>
+
+<ul data-role="children" class="children"></ul>
+
+</li><li class="post" id="post-1239291850"><div role="alert"></div>
+<div data-role="post-content" class="post-content">
+<ul class="post-menu dropdown" data-role="menu">
+<li class="collapse">
+<a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="collapse" title="Collapse"><span>−</span></a>
+</li>
+<li class="expand">
+<a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="collapse" title="Expand"><span>+</span></a>
+</li>
+
+<li class="" role="menu">
+<a class="dropdown-toggle" href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="flag" data-role="flag" title="Flag as inappropriate">
+<i aria-hidden="true" class="icon icon-flag"></i>
+</a>
+</li>
+</ul>
+<div class="indicator"></div>
+
+<div class="avatar">
+<div class="user"><img src="noavatar92.png" class="user" alt="Avatar"></div>
+</div>
+
+<div class="post-body">
+<header>
+<span class="post-byline">
+<span class="author">Guest</span>
+
+</span>
+
+<span class="post-meta">
+<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+<a href="http://webcache.googleusercontent.com/search?q=cache:u1tWk_w5f-QJ:davidsalter.com/2013/08/using-angular-dot-js-factories-to-get-remote-data.html+&cd=1&hl=ru&ct=clnk&gl=ua#comment-1239291850" data-role="relative-time" class="time-ago" title="Tuesday, February 11, 2014 7:24 AM">a year ago</a>
+</span>
+
+</header>
+
+<div class="post-body-inner">
+<div class="post-message-container" data-role="message-container">
+<div class="publisher-anchor-color" data-role="message-content">
+<div class="post-message " data-role="message" dir="auto">
+<p>.............</p>
+</div>
+
+<span class="post-media"><ul data-role="post-media-list"><li><div class="media-container media-mode-deferred media-show-buttons media-activated">
+<a class="media-button media-button-expand publisher-color publisher-border-color" href="http://a.disquscdn.com/uploads/mediaembed/images/834/7338/original.jpg" rel="nofollow" target="_blank" data-action="expand" title="">
+<i class="icon-images publisher-background-color"></i>
+View
+</a>
+<a class="media-button media-button-contract publisher-color publisher-border-color" href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" target="_blank" data-action="contract">
+<i class="icon-cancel publisher-background-color"></i> Hide
+</a>
+<div class="media-content-loader" data-role="content-loader"></div>
+<div data-role="content-placeholder" class="media-content-placeholder" style="height: auto;"><a href="http://a.disquscdn.com/uploads/mediaembed/images/834/7338/original.jpg" target="_blank" rel="nofollow">
+<img src="original.jpg" alt="Thumbnail">
+</a></div>
+</div></li></ul></span>
+</div>
+</div>
+<a class="see-more hidden" title="see more" data-action="see-more">see more</a>
+</div>
+
+<footer>
+<menu>
+
+<li class="voting" data-role="voting">
+<a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" class="vote-up  count-0" data-action="upvote" title="Vote up">
+
+<span class="updatable count" data-role="likes">0</span>
+<span class="control"><i aria-hidden="true" class="icon icon-arrow-2"></i></span>
+</a>
+<span role="button" class="vote-down  count-0" data-action="downvote" title="Vote down">
+
+<span class="control"><i aria-hidden="true" class="icon icon-arrow"></i></span>
+</span>
+</li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="reply" data-role="reply-link">
+<a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="reply">
+<i class="icon icon-mobile icon-reply"></i><span class="text">Reply</span></a></li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="share">
+<a class="toggle"><i class="icon icon-mobile icon-share"></i><span class="text">Share ›</span></a>
+<ul>
+<li class="twitter"><a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="share:twitter">Twitter</a></li>
+<li class="facebook"><a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="share:facebook">Facebook</a></li>
+<li class="link"><a href="http://webcache.googleusercontent.com/search?q=cache:u1tWk_w5f-QJ:davidsalter.com/2013/08/using-angular-dot-js-factories-to-get-remote-data.html+&cd=1&hl=ru&ct=clnk&gl=ua#comment-1239291850">Link</a></li>
+</ul>
+</li>
+
+<li class="realtime" data-role="realtime-notification:1239291850">
+<span style="display:none;" class="realtime-replies"></span>
+<a style="display:none;" href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" class="btn btn-small"></a>
+</li>
+
+</menu>
+</footer>
+</div>
+
+<div data-role="blacklist-form"></div>
+<div class="reply-form-container" data-role="reply-form"></div>
+</div>
+
+<ul data-role="children" class="children"></ul>
+
+</li><li class="post" id="post-1239290441"><div role="alert"></div>
+<div data-role="post-content" class="post-content">
+<ul class="post-menu dropdown" data-role="menu">
+<li class="collapse">
+<a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="collapse" title="Collapse"><span>−</span></a>
+</li>
+<li class="expand">
+<a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="collapse" title="Expand"><span>+</span></a>
+</li>
+
+<li class="" role="menu">
+<a class="dropdown-toggle" href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="flag" data-role="flag" title="Flag as inappropriate">
+<i aria-hidden="true" class="icon icon-flag"></i>
+</a>
+</li>
+</ul>
+<div class="indicator"></div>
+
+<div class="avatar">
+<div class="user"><img src="noavatar92.png" class="user" alt="Avatar"></div>
+</div>
+
+<div class="post-body">
+<header>
+<span class="post-byline">
+<span class="author">Guest</span>
+
+</span>
+
+<span class="post-meta">
+<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+<a href="http://webcache.googleusercontent.com/search?q=cache:u1tWk_w5f-QJ:davidsalter.com/2013/08/using-angular-dot-js-factories-to-get-remote-data.html+&cd=1&hl=ru&ct=clnk&gl=ua#comment-1239290441" data-role="relative-time" class="time-ago" title="Tuesday, February 11, 2014 7:21 AM">a year ago</a>
+</span>
+
+</header>
+
+<div class="post-body-inner">
+<div class="post-message-container" data-role="message-container">
+<div class="publisher-anchor-color" data-role="message-content">
+<div class="post-message " data-role="message" dir="auto">
+<p>hi............</p>
+</div>
+
+<span class="post-media"><ul data-role="post-media-list"></ul></span>
+</div>
+</div>
+<a class="see-more hidden" title="see more" data-action="see-more">see more</a>
+</div>
+
+<footer>
+<menu>
+
+<li class="voting" data-role="voting">
+<a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" class="vote-up  count-0" data-action="upvote" title="Vote up">
+
+<span class="updatable count" data-role="likes">0</span>
+<span class="control"><i aria-hidden="true" class="icon icon-arrow-2"></i></span>
+</a>
+<span role="button" class="vote-down  count-0" data-action="downvote" title="Vote down">
+
+<span class="control"><i aria-hidden="true" class="icon icon-arrow"></i></span>
+</span>
+</li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="reply" data-role="reply-link">
+<a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="reply">
+<i class="icon icon-mobile icon-reply"></i><span class="text">Reply</span></a></li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="share">
+<a class="toggle"><i class="icon icon-mobile icon-share"></i><span class="text">Share ›</span></a>
+<ul>
+<li class="twitter"><a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="share:twitter">Twitter</a></li>
+<li class="facebook"><a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="share:facebook">Facebook</a></li>
+<li class="link"><a href="http://webcache.googleusercontent.com/search?q=cache:u1tWk_w5f-QJ:davidsalter.com/2013/08/using-angular-dot-js-factories-to-get-remote-data.html+&cd=1&hl=ru&ct=clnk&gl=ua#comment-1239290441">Link</a></li>
+</ul>
+</li>
+
+<li class="realtime" data-role="realtime-notification:1239290441">
+<span style="display:none;" class="realtime-replies"></span>
+<a style="display:none;" href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" class="btn btn-small"></a>
+</li>
+
+</menu>
+</footer>
+</div>
+
+<div data-role="blacklist-form"></div>
+<div class="reply-form-container" data-role="reply-form"></div>
+</div>
+
+<ul data-role="children" class="children"><li class="post" id="post-1239291047"><div role="alert"></div>
+<div data-role="post-content" class="post-content">
+<ul class="post-menu dropdown" data-role="menu">
+<li class="collapse">
+<a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="collapse" title="Collapse"><span>−</span></a>
+</li>
+<li class="expand">
+<a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="collapse" title="Expand"><span>+</span></a>
+</li>
+
+<li class="" role="menu">
+<a class="dropdown-toggle" href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="flag" data-role="flag" title="Flag as inappropriate">
+<i aria-hidden="true" class="icon icon-flag"></i>
+</a>
+</li>
+</ul>
+<div class="indicator"></div>
+
+<div class="avatar">
+<div class="user"><img src="noavatar92.png" class="user" alt="Avatar"></div>
+</div>
+
+<div class="post-body">
+<header>
+<span class="post-byline">
+<span class="author">Guest</span>
+
+<span><a href="http://webcache.googleusercontent.com/search?q=cache:u1tWk_w5f-QJ:davidsalter.com/2013/08/using-angular-dot-js-factories-to-get-remote-data.html+&cd=1&hl=ru&ct=clnk&gl=ua#comment-1239290441" class="parent-link" data-role="parent-link"><i aria-hidden="true" class="icon-forward" title="in reply to"></i> Guest</a></span>
+</span>
+
+<span class="post-meta">
+<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+<a href="http://webcache.googleusercontent.com/search?q=cache:u1tWk_w5f-QJ:davidsalter.com/2013/08/using-angular-dot-js-factories-to-get-remote-data.html+&cd=1&hl=ru&ct=clnk&gl=ua#comment-1239291047" data-role="relative-time" class="time-ago" title="Tuesday, February 11, 2014 7:22 AM">a year ago</a>
+</span>
+
+</header>
+
+<div class="post-body-inner">
+<div class="post-message-container" data-role="message-container">
+<div class="publisher-anchor-color" data-role="message-content">
+<div class="post-message " data-role="message" dir="auto">
+<p>thanks...................</p>
+</div>
+
+<span class="post-media"><ul data-role="post-media-list"></ul></span>
+</div>
+</div>
+<a class="see-more hidden" title="see more" data-action="see-more">see more</a>
+</div>
+
+<footer>
+<menu>
+
+<li class="voting" data-role="voting">
+<a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" class="vote-up  count-0" data-action="upvote" title="Vote up">
+
+<span class="updatable count" data-role="likes">0</span>
+<span class="control"><i aria-hidden="true" class="icon icon-arrow-2"></i></span>
+</a>
+<span role="button" class="vote-down  count-0" data-action="downvote" title="Vote down">
+
+<span class="control"><i aria-hidden="true" class="icon icon-arrow"></i></span>
+</span>
+</li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="reply" data-role="reply-link">
+<a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="reply">
+<i class="icon icon-mobile icon-reply"></i><span class="text">Reply</span></a></li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="share">
+<a class="toggle"><i class="icon icon-mobile icon-share"></i><span class="text">Share ›</span></a>
+<ul>
+<li class="twitter"><a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="share:twitter">Twitter</a></li>
+<li class="facebook"><a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="share:facebook">Facebook</a></li>
+<li class="link"><a href="http://webcache.googleusercontent.com/search?q=cache:u1tWk_w5f-QJ:davidsalter.com/2013/08/using-angular-dot-js-factories-to-get-remote-data.html+&cd=1&hl=ru&ct=clnk&gl=ua#comment-1239291047">Link</a></li>
+</ul>
+</li>
+
+<li class="realtime" data-role="realtime-notification:1239291047">
+<span style="display:none;" class="realtime-replies"></span>
+<a style="display:none;" href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" class="btn btn-small"></a>
+</li>
+
+</menu>
+</footer>
+</div>
+
+<div data-role="blacklist-form"></div>
+<div class="reply-form-container" data-role="reply-form"></div>
+</div>
+
+<ul data-role="children" class="children"></ul>
+
+</li><li class="post" id="post-1239290749"><div role="alert"></div>
+<div data-role="post-content" class="post-content">
+<ul class="post-menu dropdown" data-role="menu">
+<li class="collapse">
+<a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="collapse" title="Collapse"><span>−</span></a>
+</li>
+<li class="expand">
+<a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="collapse" title="Expand"><span>+</span></a>
+</li>
+
+<li class="" role="menu">
+<a class="dropdown-toggle" href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="flag" data-role="flag" title="Flag as inappropriate">
+<i aria-hidden="true" class="icon icon-flag"></i>
+</a>
+</li>
+</ul>
+<div class="indicator"></div>
+
+<div class="avatar">
+<div class="user"><img src="noavatar92.png" class="user" alt="Avatar"></div>
+</div>
+
+<div class="post-body">
+<header>
+<span class="post-byline">
+<span class="author">Guest</span>
+
+<span><a href="http://webcache.googleusercontent.com/search?q=cache:u1tWk_w5f-QJ:davidsalter.com/2013/08/using-angular-dot-js-factories-to-get-remote-data.html+&cd=1&hl=ru&ct=clnk&gl=ua#comment-1239290441" class="parent-link" data-role="parent-link"><i aria-hidden="true" class="icon-forward" title="in reply to"></i> Guest</a></span>
+</span>
+
+<span class="post-meta">
+<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+<a href="http://webcache.googleusercontent.com/search?q=cache:u1tWk_w5f-QJ:davidsalter.com/2013/08/using-angular-dot-js-factories-to-get-remote-data.html+&cd=1&hl=ru&ct=clnk&gl=ua#comment-1239290749" data-role="relative-time" class="time-ago" title="Tuesday, February 11, 2014 7:22 AM">a year ago</a>
+</span>
+
+</header>
+
+<div class="post-body-inner">
+<div class="post-message-container" data-role="message-container">
+<div class="publisher-anchor-color" data-role="message-content">
+<div class="post-message " data-role="message" dir="auto">
+<p>thanks</p>
+</div>
+
+<span class="post-media"><ul data-role="post-media-list"></ul></span>
+</div>
+</div>
+<a class="see-more hidden" title="see more" data-action="see-more">see more</a>
+</div>
+
+<footer>
+<menu>
+
+<li class="voting" data-role="voting">
+<a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" class="vote-up  count-0" data-action="upvote" title="Vote up">
+
+<span class="updatable count" data-role="likes">0</span>
+<span class="control"><i aria-hidden="true" class="icon icon-arrow-2"></i></span>
+</a>
+<span role="button" class="vote-down  count-0" data-action="downvote" title="Vote down">
+
+<span class="control"><i aria-hidden="true" class="icon icon-arrow"></i></span>
+</span>
+</li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="reply" data-role="reply-link">
+<a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="reply">
+<i class="icon icon-mobile icon-reply"></i><span class="text">Reply</span></a></li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="share">
+<a class="toggle"><i class="icon icon-mobile icon-share"></i><span class="text">Share ›</span></a>
+<ul>
+<li class="twitter"><a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="share:twitter">Twitter</a></li>
+<li class="facebook"><a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="share:facebook">Facebook</a></li>
+<li class="link"><a href="http://webcache.googleusercontent.com/search?q=cache:u1tWk_w5f-QJ:davidsalter.com/2013/08/using-angular-dot-js-factories-to-get-remote-data.html+&cd=1&hl=ru&ct=clnk&gl=ua#comment-1239290749">Link</a></li>
+</ul>
+</li>
+
+<li class="realtime" data-role="realtime-notification:1239290749">
+<span style="display:none;" class="realtime-replies"></span>
+<a style="display:none;" href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" class="btn btn-small"></a>
+</li>
+
+</menu>
+</footer>
+</div>
+
+<div data-role="blacklist-form"></div>
+<div class="reply-form-container" data-role="reply-form"></div>
+</div>
+
+<ul data-role="children" class="children"><li class="post" id="post-1239290943"><div role="alert"></div>
+<div data-role="post-content" class="post-content">
+<ul class="post-menu dropdown" data-role="menu">
+<li class="collapse">
+<a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="collapse" title="Collapse"><span>−</span></a>
+</li>
+<li class="expand">
+<a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="collapse" title="Expand"><span>+</span></a>
+</li>
+
+<li class="" role="menu">
+<a class="dropdown-toggle" href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="flag" data-role="flag" title="Flag as inappropriate">
+<i aria-hidden="true" class="icon icon-flag"></i>
+</a>
+</li>
+</ul>
+<div class="indicator"></div>
+
+<div class="avatar">
+<div class="user"><img src="noavatar92.png" class="user" alt="Avatar"></div>
+</div>
+
+<div class="post-body">
+<header>
+<span class="post-byline">
+<span class="author">Guest</span>
+
+<span><a href="http://webcache.googleusercontent.com/search?q=cache:u1tWk_w5f-QJ:davidsalter.com/2013/08/using-angular-dot-js-factories-to-get-remote-data.html+&cd=1&hl=ru&ct=clnk&gl=ua#comment-1239290749" class="parent-link" data-role="parent-link"><i aria-hidden="true" class="icon-forward" title="in reply to"></i> Guest</a></span>
+</span>
+
+<span class="post-meta">
+<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+<a href="http://webcache.googleusercontent.com/search?q=cache:u1tWk_w5f-QJ:davidsalter.com/2013/08/using-angular-dot-js-factories-to-get-remote-data.html+&cd=1&hl=ru&ct=clnk&gl=ua#comment-1239290943" data-role="relative-time" class="time-ago" title="Tuesday, February 11, 2014 7:22 AM">a year ago</a>
+</span>
+
+</header>
+
+<div class="post-body-inner">
+<div class="post-message-container" data-role="message-container">
+<div class="publisher-anchor-color" data-role="message-content">
+<div class="post-message " data-role="message" dir="auto">
+<p>thanks.....</p>
+</div>
+
+<span class="post-media"><ul data-role="post-media-list"></ul></span>
+</div>
+</div>
+<a class="see-more hidden" title="see more" data-action="see-more">see more</a>
+</div>
+
+<footer>
+<menu>
+
+<li class="voting" data-role="voting">
+<a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" class="vote-up  count-0" data-action="upvote" title="Vote up">
+
+<span class="updatable count" data-role="likes">0</span>
+<span class="control"><i aria-hidden="true" class="icon icon-arrow-2"></i></span>
+</a>
+<span role="button" class="vote-down  count-0" data-action="downvote" title="Vote down">
+
+<span class="control"><i aria-hidden="true" class="icon icon-arrow"></i></span>
+</span>
+</li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="reply" data-role="reply-link">
+<a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="reply">
+<i class="icon icon-mobile icon-reply"></i><span class="text">Reply</span></a></li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="share">
+<a class="toggle"><i class="icon icon-mobile icon-share"></i><span class="text">Share ›</span></a>
+<ul>
+<li class="twitter"><a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="share:twitter">Twitter</a></li>
+<li class="facebook"><a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="share:facebook">Facebook</a></li>
+<li class="link"><a href="http://webcache.googleusercontent.com/search?q=cache:u1tWk_w5f-QJ:davidsalter.com/2013/08/using-angular-dot-js-factories-to-get-remote-data.html+&cd=1&hl=ru&ct=clnk&gl=ua#comment-1239290943">Link</a></li>
+</ul>
+</li>
+
+<li class="realtime" data-role="realtime-notification:1239290943">
+<span style="display:none;" class="realtime-replies"></span>
+<a style="display:none;" href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" class="btn btn-small"></a>
+</li>
+
+</menu>
+</footer>
+</div>
+
+<div data-role="blacklist-form"></div>
+<div class="reply-form-container" data-role="reply-form"></div>
+</div>
+
+<ul data-role="children" class="children"></ul>
+
+</li></ul>
+
+</li></ul>
+
+</li><li class="post" id="post-1224451341"><div role="alert"></div>
+<div data-role="post-content" class="post-content">
+<ul class="post-menu dropdown" data-role="menu">
+<li class="collapse">
+<a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="collapse" title="Collapse"><span>−</span></a>
+</li>
+<li class="expand">
+<a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="collapse" title="Expand"><span>+</span></a>
+</li>
+
+<li class="" role="menu">
+<a class="dropdown-toggle" href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="flag" data-role="flag" title="Flag as inappropriate">
+<i aria-hidden="true" class="icon icon-flag"></i>
+</a>
+</li>
+</ul>
+<div class="indicator"></div>
+
+<div class="avatar hovercard">
+<a href="https://disqus.com/by/webmandman/" class="user" data-action="profile" data-username="webmandman">
+<img data-role="user-avatar" data-user="92901338" src="avatar92.jpg" alt="Avatar">
+</a>
+</div>
+<div class="post-body">
+<header>
+<span class="post-byline">
+<span class="author publisher-anchor-color"><a href="https://disqus.com/by/webmandman/" data-action="profile" data-username="webmandman" data-role="username">Daniel Mejia</a></span>
+
+</span>
+
+<span class="post-meta">
+<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+<a href="http://webcache.googleusercontent.com/search?q=cache:u1tWk_w5f-QJ:davidsalter.com/2013/08/using-angular-dot-js-factories-to-get-remote-data.html+&cd=1&hl=ru&ct=clnk&gl=ua#comment-1224451341" data-role="relative-time" class="time-ago" title="Friday, January 31, 2014 12:18 AM">a year ago</a>
+</span>
+
+</header>
+
+<div class="post-body-inner">
+<div class="post-message-container" data-role="message-container">
+<div class="publisher-anchor-color" data-role="message-content">
+<div class="post-message " data-role="message" dir="auto">
+<p>David,</p><p>I seriously just started looking into angular, I haven't even finished the phones tutorial. But looking into angular two days ago and finding this post today was perfect timing. So thanks.</p>
+</div>
+
+<span class="post-media"><ul data-role="post-media-list"></ul></span>
+</div>
+</div>
+<a class="see-more hidden" title="see more" data-action="see-more">see more</a>
+</div>
+
+<footer>
+<menu>
+
+<li class="voting" data-role="voting">
+<a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" class="vote-up  count-0" data-action="upvote" title="Vote up">
+
+<span class="updatable count" data-role="likes">0</span>
+<span class="control"><i aria-hidden="true" class="icon icon-arrow-2"></i></span>
+</a>
+<span role="button" class="vote-down  count-0" data-action="downvote" title="Vote down">
+
+<span class="control"><i aria-hidden="true" class="icon icon-arrow"></i></span>
+</span>
+</li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="reply" data-role="reply-link">
+<a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="reply">
+<i class="icon icon-mobile icon-reply"></i><span class="text">Reply</span></a></li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="share">
+<a class="toggle"><i class="icon icon-mobile icon-share"></i><span class="text">Share ›</span></a>
+<ul>
+<li class="twitter"><a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="share:twitter">Twitter</a></li>
+<li class="facebook"><a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="share:facebook">Facebook</a></li>
+<li class="link"><a href="http://webcache.googleusercontent.com/search?q=cache:u1tWk_w5f-QJ:davidsalter.com/2013/08/using-angular-dot-js-factories-to-get-remote-data.html+&cd=1&hl=ru&ct=clnk&gl=ua#comment-1224451341">Link</a></li>
+</ul>
+</li>
+
+<li class="realtime" data-role="realtime-notification:1224451341">
+<span style="display:none;" class="realtime-replies"></span>
+<a style="display:none;" href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" class="btn btn-small"></a>
+</li>
+
+</menu>
+</footer>
+</div>
+
+<div data-role="blacklist-form"></div>
+<div class="reply-form-container" data-role="reply-form"></div>
+</div>
+
+<ul data-role="children" class="children"></ul>
+
+</li><li class="post" id="post-1196642427"><div role="alert"></div>
+<div data-role="post-content" class="post-content">
+<ul class="post-menu dropdown" data-role="menu">
+<li class="collapse">
+<a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="collapse" title="Collapse"><span>−</span></a>
+</li>
+<li class="expand">
+<a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="collapse" title="Expand"><span>+</span></a>
+</li>
+
+<li class="" role="menu">
+<a class="dropdown-toggle" href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="flag" data-role="flag" title="Flag as inappropriate">
+<i aria-hidden="true" class="icon icon-flag"></i>
+</a>
+</li>
+</ul>
+<div class="indicator"></div>
+
+<div class="avatar hovercard">
+<a href="https://disqus.com/by/disqus_Uwsm5w7Doy/" class="user" data-action="profile" data-username="disqus_Uwsm5w7Doy">
+<img data-role="user-avatar" data-user="90218432" src="avatar92(1).jpg" alt="Avatar">
+</a>
+</div>
+<div class="post-body">
+<header>
+<span class="post-byline">
+<span class="author publisher-anchor-color"><a href="https://disqus.com/by/disqus_Uwsm5w7Doy/" data-action="profile" data-username="disqus_Uwsm5w7Doy" data-role="username">Andy Z</a></span>
+
+</span>
+
+<span class="post-meta">
+<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+<a href="http://webcache.googleusercontent.com/search?q=cache:u1tWk_w5f-QJ:davidsalter.com/2013/08/using-angular-dot-js-factories-to-get-remote-data.html+&cd=1&hl=ru&ct=clnk&gl=ua#comment-1196642427" data-role="relative-time" class="time-ago" title="Saturday, January 11, 2014 11:22 PM">a year ago</a>
+</span>
+
+</header>
+
+<div class="post-body-inner">
+<div class="post-message-container" data-role="message-container">
+<div class="publisher-anchor-color" data-role="message-content">
+<div class="post-message " data-role="message" dir="auto">
+<p>Thank you thank you thank you.  I spent all day reading stackoverflow posts and trying to learn up on factories and services and yada yada yada.  All I wanted was one useful example of how to make a factory around the $http service that I already had in my controller and help it all make sense!</p><p>The key here, is that when defining your controller you changed the second argument which was $http (when there was no factory and the $http was used directly in the controllwer) into your factory instance fruitsFactory.</p>
+</div>
+
+<span class="post-media"><ul data-role="post-media-list"></ul></span>
+</div>
+</div>
+<a class="see-more hidden" title="see more" data-action="see-more">see more</a>
+</div>
+
+<footer>
+<menu>
+
+<li class="voting" data-role="voting">
+<a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" class="vote-up  count-0" data-action="upvote" title="Vote up">
+
+<span class="updatable count" data-role="likes">0</span>
+<span class="control"><i aria-hidden="true" class="icon icon-arrow-2"></i></span>
+</a>
+<span role="button" class="vote-down  count-0" data-action="downvote" title="Vote down">
+
+<span class="control"><i aria-hidden="true" class="icon icon-arrow"></i></span>
+</span>
+</li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="reply" data-role="reply-link">
+<a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="reply">
+<i class="icon icon-mobile icon-reply"></i><span class="text">Reply</span></a></li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="share">
+<a class="toggle"><i class="icon icon-mobile icon-share"></i><span class="text">Share ›</span></a>
+<ul>
+<li class="twitter"><a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="share:twitter">Twitter</a></li>
+<li class="facebook"><a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="share:facebook">Facebook</a></li>
+<li class="link"><a href="http://webcache.googleusercontent.com/search?q=cache:u1tWk_w5f-QJ:davidsalter.com/2013/08/using-angular-dot-js-factories-to-get-remote-data.html+&cd=1&hl=ru&ct=clnk&gl=ua#comment-1196642427">Link</a></li>
+</ul>
+</li>
+
+<li class="realtime" data-role="realtime-notification:1196642427">
+<span style="display:none;" class="realtime-replies"></span>
+<a style="display:none;" href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" class="btn btn-small"></a>
+</li>
+
+</menu>
+</footer>
+</div>
+
+<div data-role="blacklist-form"></div>
+<div class="reply-form-container" data-role="reply-form"></div>
+</div>
+
+<ul data-role="children" class="children"></ul>
+
+</li><li class="post" id="post-1191093611"><div role="alert"></div>
+<div data-role="post-content" class="post-content">
+<ul class="post-menu dropdown" data-role="menu">
+<li class="collapse">
+<a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="collapse" title="Collapse"><span>−</span></a>
+</li>
+<li class="expand">
+<a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="collapse" title="Expand"><span>+</span></a>
+</li>
+
+<li class="" role="menu">
+<a class="dropdown-toggle" href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="flag" data-role="flag" title="Flag as inappropriate">
+<i aria-hidden="true" class="icon icon-flag"></i>
+</a>
+</li>
+</ul>
+<div class="indicator"></div>
+
+<div class="avatar hovercard">
+<a href="https://disqus.com/by/joshblaha/" class="user" data-action="profile" data-username="joshblaha">
+<img data-role="user-avatar" data-user="53262110" src="avatar92(2).jpg" alt="Avatar">
+</a>
+</div>
+<div class="post-body">
+<header>
+<span class="post-byline">
+<span class="author publisher-anchor-color"><a href="https://disqus.com/by/joshblaha/" data-action="profile" data-username="joshblaha" data-role="username">Josh Blaha</a></span>
+
+</span>
+
+<span class="post-meta">
+<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+<a href="http://webcache.googleusercontent.com/search?q=cache:u1tWk_w5f-QJ:davidsalter.com/2013/08/using-angular-dot-js-factories-to-get-remote-data.html+&cd=1&hl=ru&ct=clnk&gl=ua#comment-1191093611" data-role="relative-time" class="time-ago" title="Tuesday, January 7, 2014 11:02 PM">a year ago</a>
+</span>
+
+</header>
+
+<div class="post-body-inner">
+<div class="post-message-container" data-role="message-container">
+<div class="publisher-anchor-color" data-role="message-content">
+<div class="post-message " data-role="message" dir="auto">
+<p>Thank you so much for this post! I have been looking for a simple example like this for hours. All of the examples I've seen except this one don't work. So, thanks!</p>
+</div>
+
+<span class="post-media"><ul data-role="post-media-list"></ul></span>
+</div>
+</div>
+<a class="see-more hidden" title="see more" data-action="see-more">see more</a>
+</div>
+
+<footer>
+<menu>
+
+<li class="voting" data-role="voting">
+<a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" class="vote-up  count-0" data-action="upvote" title="Vote up">
+
+<span class="updatable count" data-role="likes">0</span>
+<span class="control"><i aria-hidden="true" class="icon icon-arrow-2"></i></span>
+</a>
+<span role="button" class="vote-down  count-0" data-action="downvote" title="Vote down">
+
+<span class="control"><i aria-hidden="true" class="icon icon-arrow"></i></span>
+</span>
+</li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="reply" data-role="reply-link">
+<a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="reply">
+<i class="icon icon-mobile icon-reply"></i><span class="text">Reply</span></a></li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="share">
+<a class="toggle"><i class="icon icon-mobile icon-share"></i><span class="text">Share ›</span></a>
+<ul>
+<li class="twitter"><a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="share:twitter">Twitter</a></li>
+<li class="facebook"><a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="share:facebook">Facebook</a></li>
+<li class="link"><a href="http://webcache.googleusercontent.com/search?q=cache:u1tWk_w5f-QJ:davidsalter.com/2013/08/using-angular-dot-js-factories-to-get-remote-data.html+&cd=1&hl=ru&ct=clnk&gl=ua#comment-1191093611">Link</a></li>
+</ul>
+</li>
+
+<li class="realtime" data-role="realtime-notification:1191093611">
+<span style="display:none;" class="realtime-replies"></span>
+<a style="display:none;" href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" class="btn btn-small"></a>
+</li>
+
+</menu>
+</footer>
+</div>
+
+<div data-role="blacklist-form"></div>
+<div class="reply-form-container" data-role="reply-form"></div>
+</div>
+
+<ul data-role="children" class="children"></ul>
+
+</li><li class="post" id="post-1096426887"><div role="alert"></div>
+<div data-role="post-content" class="post-content">
+<ul class="post-menu dropdown" data-role="menu">
+<li class="collapse">
+<a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="collapse" title="Collapse"><span>−</span></a>
+</li>
+<li class="expand">
+<a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="collapse" title="Expand"><span>+</span></a>
+</li>
+
+<li class="" role="menu">
+<a class="dropdown-toggle" href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="flag" data-role="flag" title="Flag as inappropriate">
+<i aria-hidden="true" class="icon icon-flag"></i>
+</a>
+</li>
+</ul>
+<div class="indicator"></div>
+
+<div class="avatar hovercard">
+<a href="https://disqus.com/by/johnstew/" class="user" data-action="profile" data-username="johnstew">
+<img data-role="user-avatar" data-user="31267559" src="noavatar92.png" alt="Avatar">
+</a>
+</div>
+<div class="post-body">
+<header>
+<span class="post-byline">
+<span class="author publisher-anchor-color"><a href="https://disqus.com/by/johnstew/" data-action="profile" data-username="johnstew" data-role="username">johnstew</a></span>
+
+</span>
+
+<span class="post-meta">
+<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+<a href="http://webcache.googleusercontent.com/search?q=cache:u1tWk_w5f-QJ:davidsalter.com/2013/08/using-angular-dot-js-factories-to-get-remote-data.html+&cd=1&hl=ru&ct=clnk&gl=ua#comment-1096426887" data-role="relative-time" class="time-ago" title="Friday, October 25, 2013 6:11 PM">a year ago</a>
+</span>
+
+</header>
+
+<div class="post-body-inner">
+<div class="post-message-container" data-role="message-container">
+<div class="publisher-anchor-color" data-role="message-content">
+<div class="post-message " data-role="message" dir="auto">
+<p>Been looking for an article like this for awhile now. Glad I found it. I assume that this is the proper way to handle Reqeusts via AJAX. I know you are not suppose to use the controller for DOM manipulation and things of that nature but I suppose that making these Requests are okay to handle in the controllers via a Factory, Correct or No?</p>
+</div>
+
+<span class="post-media"><ul data-role="post-media-list"></ul></span>
+</div>
+</div>
+<a class="see-more hidden" title="see more" data-action="see-more">see more</a>
+</div>
+
+<footer>
+<menu>
+
+<li class="voting" data-role="voting">
+<a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" class="vote-up  count-0" data-action="upvote" title="Vote up">
+
+<span class="updatable count" data-role="likes">0</span>
+<span class="control"><i aria-hidden="true" class="icon icon-arrow-2"></i></span>
+</a>
+<span role="button" class="vote-down  count-0" data-action="downvote" title="Vote down">
+
+<span class="control"><i aria-hidden="true" class="icon icon-arrow"></i></span>
+</span>
+</li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="reply" data-role="reply-link">
+<a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="reply">
+<i class="icon icon-mobile icon-reply"></i><span class="text">Reply</span></a></li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="share">
+<a class="toggle"><i class="icon icon-mobile icon-share"></i><span class="text">Share ›</span></a>
+<ul>
+<li class="twitter"><a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="share:twitter">Twitter</a></li>
+<li class="facebook"><a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="share:facebook">Facebook</a></li>
+<li class="link"><a href="http://webcache.googleusercontent.com/search?q=cache:u1tWk_w5f-QJ:davidsalter.com/2013/08/using-angular-dot-js-factories-to-get-remote-data.html+&cd=1&hl=ru&ct=clnk&gl=ua#comment-1096426887">Link</a></li>
+</ul>
+</li>
+
+<li class="realtime" data-role="realtime-notification:1096426887">
+<span style="display:none;" class="realtime-replies"></span>
+<a style="display:none;" href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" class="btn btn-small"></a>
+</li>
+
+</menu>
+</footer>
+</div>
+
+<div data-role="blacklist-form"></div>
+<div class="reply-form-container" data-role="reply-form"></div>
+</div>
+
+<ul data-role="children" class="children"></ul>
+
+</li><li class="post" id="post-1031457682"><div role="alert"></div>
+<div data-role="post-content" class="post-content">
+<ul class="post-menu dropdown" data-role="menu">
+<li class="collapse">
+<a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="collapse" title="Collapse"><span>−</span></a>
+</li>
+<li class="expand">
+<a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="collapse" title="Expand"><span>+</span></a>
+</li>
+
+<li class="" role="menu">
+<a class="dropdown-toggle" href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="flag" data-role="flag" title="Flag as inappropriate">
+<i aria-hidden="true" class="icon icon-flag"></i>
+</a>
+</li>
+</ul>
+<div class="indicator"></div>
+
+<div class="avatar hovercard">
+<a href="https://disqus.com/by/jeremylikness/" class="user" data-action="profile" data-username="jeremylikness">
+<img data-role="user-avatar" data-user="71671920" src="noavatar92.png" alt="Avatar">
+</a>
+</div>
+<div class="post-body">
+<header>
+<span class="post-byline">
+<span class="author publisher-anchor-color"><a href="https://disqus.com/by/jeremylikness/" data-action="profile" data-username="jeremylikness" data-role="username">Jeremy Likness</a></span>
+
+</span>
+
+<span class="post-meta">
+<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+<a href="http://webcache.googleusercontent.com/search?q=cache:u1tWk_w5f-QJ:davidsalter.com/2013/08/using-angular-dot-js-factories-to-get-remote-data.html+&cd=1&hl=ru&ct=clnk&gl=ua#comment-1031457682" data-role="relative-time" class="time-ago" title="Friday, September 6, 2013 1:05 AM">2 years ago</a>
+</span>
+
+</header>
+
+<div class="post-body-inner">
+<div class="post-message-container" data-role="message-container">
+<div class="publisher-anchor-color" data-role="message-content">
+<div class="post-message " data-role="message" dir="auto">
+<p>I agree. If you are just binding the result to the $scope object, angular is smart enough to understand a promise and defer the promise then bind the data when it appears. So, instead of doing a callback, you can literally just return the promise itself and set it to the $scope, like this: $scope.fruits = fruitsFactory.getFruitsAsync() and then in the factory return $http.get('fruits.json');</p>
+</div>
+
+<span class="post-media"><ul data-role="post-media-list"></ul></span>
+</div>
+</div>
+<a class="see-more hidden" title="see more" data-action="see-more">see more</a>
+</div>
+
+<footer>
+<menu>
+
+<li class="voting" data-role="voting">
+<a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" class="vote-up  count-0" data-action="upvote" title="Vote up">
+
+<span class="updatable count" data-role="likes">0</span>
+<span class="control"><i aria-hidden="true" class="icon icon-arrow-2"></i></span>
+</a>
+<span role="button" class="vote-down  count-0" data-action="downvote" title="Vote down">
+
+<span class="control"><i aria-hidden="true" class="icon icon-arrow"></i></span>
+</span>
+</li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="reply" data-role="reply-link">
+<a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="reply">
+<i class="icon icon-mobile icon-reply"></i><span class="text">Reply</span></a></li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="share">
+<a class="toggle"><i class="icon icon-mobile icon-share"></i><span class="text">Share ›</span></a>
+<ul>
+<li class="twitter"><a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="share:twitter">Twitter</a></li>
+<li class="facebook"><a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="share:facebook">Facebook</a></li>
+<li class="link"><a href="http://webcache.googleusercontent.com/search?q=cache:u1tWk_w5f-QJ:davidsalter.com/2013/08/using-angular-dot-js-factories-to-get-remote-data.html+&cd=1&hl=ru&ct=clnk&gl=ua#comment-1031457682">Link</a></li>
+</ul>
+</li>
+
+<li class="realtime" data-role="realtime-notification:1031457682">
+<span style="display:none;" class="realtime-replies"></span>
+<a style="display:none;" href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" class="btn btn-small"></a>
+</li>
+
+</menu>
+</footer>
+</div>
+
+<div data-role="blacklist-form"></div>
+<div class="reply-form-container" data-role="reply-form"></div>
+</div>
+
+<ul data-role="children" class="children"><li class="post" id="post-1098538243"><div role="alert"></div>
+<div data-role="post-content" class="post-content">
+<ul class="post-menu dropdown" data-role="menu">
+<li class="collapse">
+<a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="collapse" title="Collapse"><span>−</span></a>
+</li>
+<li class="expand">
+<a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="collapse" title="Expand"><span>+</span></a>
+</li>
+
+<li class="" role="menu">
+<a class="dropdown-toggle" href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="flag" data-role="flag" title="Flag as inappropriate">
+<i aria-hidden="true" class="icon icon-flag"></i>
+</a>
+</li>
+</ul>
+<div class="indicator"></div>
+
+<div class="avatar hovercard">
+<a href="https://disqus.com/by/vohof/" class="user" data-action="profile" data-username="vohof">
+<img data-role="user-avatar" data-user="40783378" src="noavatar92.png" alt="Avatar">
+</a>
+</div>
+<div class="post-body">
+<header>
+<span class="post-byline">
+<span class="author publisher-anchor-color"><a href="https://disqus.com/by/vohof/" data-action="profile" data-username="vohof" data-role="username">David</a></span>
+
+<span><a href="http://webcache.googleusercontent.com/search?q=cache:u1tWk_w5f-QJ:davidsalter.com/2013/08/using-angular-dot-js-factories-to-get-remote-data.html+&cd=1&hl=ru&ct=clnk&gl=ua#comment-1031457682" class="parent-link" data-role="parent-link"><i aria-hidden="true" class="icon-forward" title="in reply to"></i> Jeremy Likness</a></span>
+</span>
+
+<span class="post-meta">
+<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+<a href="http://webcache.googleusercontent.com/search?q=cache:u1tWk_w5f-QJ:davidsalter.com/2013/08/using-angular-dot-js-factories-to-get-remote-data.html+&cd=1&hl=ru&ct=clnk&gl=ua#comment-1098538243" data-role="relative-time" class="time-ago" title="Sunday, October 27, 2013 6:34 PM">a year ago</a>
+</span>
+
+</header>
+
+<div class="post-body-inner">
+<div class="post-message-container" data-role="message-container">
+<div class="publisher-anchor-color" data-role="message-content">
+<div class="post-message " data-role="message" dir="auto">
+<p>but how will you handle errors?</p>
+</div>
+
+<span class="post-media"><ul data-role="post-media-list"></ul></span>
+</div>
+</div>
+<a class="see-more hidden" title="see more" data-action="see-more">see more</a>
+</div>
+
+<footer>
+<menu>
+
+<li class="voting" data-role="voting">
+<a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" class="vote-up  count-2" data-action="upvote" title="">
+
+<span class="updatable count" data-role="likes">2</span>
+<span class="control"><i aria-hidden="true" class="icon icon-arrow-2"></i></span>
+</a>
+<span role="button" class="vote-down  count-0" data-action="downvote" title="Vote down">
+
+<span class="control"><i aria-hidden="true" class="icon icon-arrow"></i></span>
+</span>
+</li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="reply" data-role="reply-link">
+<a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="reply">
+<i class="icon icon-mobile icon-reply"></i><span class="text">Reply</span></a></li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="share">
+<a class="toggle"><i class="icon icon-mobile icon-share"></i><span class="text">Share ›</span></a>
+<ul>
+<li class="twitter"><a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="share:twitter">Twitter</a></li>
+<li class="facebook"><a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="share:facebook">Facebook</a></li>
+<li class="link"><a href="http://webcache.googleusercontent.com/search?q=cache:u1tWk_w5f-QJ:davidsalter.com/2013/08/using-angular-dot-js-factories-to-get-remote-data.html+&cd=1&hl=ru&ct=clnk&gl=ua#comment-1098538243">Link</a></li>
+</ul>
+</li>
+
+<li class="realtime" data-role="realtime-notification:1098538243">
+<span style="display:none;" class="realtime-replies"></span>
+<a style="display:none;" href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" class="btn btn-small"></a>
+</li>
+
+</menu>
+</footer>
+</div>
+
+<div data-role="blacklist-form"></div>
+<div class="reply-form-container" data-role="reply-form"></div>
+</div>
+
+<ul data-role="children" class="children"><li class="post" id="post-1195634340"><div role="alert"></div>
+<div data-role="post-content" class="post-content">
+<ul class="post-menu dropdown" data-role="menu">
+<li class="collapse">
+<a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="collapse" title="Collapse"><span>−</span></a>
+</li>
+<li class="expand">
+<a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="collapse" title="Expand"><span>+</span></a>
+</li>
+
+<li class="" role="menu">
+<a class="dropdown-toggle" href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="flag" data-role="flag" title="Flag as inappropriate">
+<i aria-hidden="true" class="icon icon-flag"></i>
+</a>
+</li>
+</ul>
+<div class="indicator"></div>
+
+<div class="avatar hovercard">
+<a href="https://disqus.com/by/disqus_p5gWR8V4AG/" class="user" data-action="profile" data-username="disqus_p5gWR8V4AG">
+<img data-role="user-avatar" data-user="53623011" src="noavatar92.png" alt="Avatar">
+</a>
+</div>
+<div class="post-body">
+<header>
+<span class="post-byline">
+<span class="author publisher-anchor-color"><a href="https://disqus.com/by/disqus_p5gWR8V4AG/" data-action="profile" data-username="disqus_p5gWR8V4AG" data-role="username">Mike McNeil</a></span>
+
+<span><a href="http://webcache.googleusercontent.com/search?q=cache:u1tWk_w5f-QJ:davidsalter.com/2013/08/using-angular-dot-js-factories-to-get-remote-data.html+&cd=1&hl=ru&ct=clnk&gl=ua#comment-1098538243" class="parent-link" data-role="parent-link"><i aria-hidden="true" class="icon-forward" title="in reply to"></i> David</a></span>
+</span>
+
+<span class="post-meta">
+<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+<a href="http://webcache.googleusercontent.com/search?q=cache:u1tWk_w5f-QJ:davidsalter.com/2013/08/using-angular-dot-js-factories-to-get-remote-data.html+&cd=1&hl=ru&ct=clnk&gl=ua#comment-1195634340" data-role="relative-time" class="time-ago" title="Saturday, January 11, 2014 12:31 AM">a year ago</a>
+</span>
+
+</header>
+
+<div class="post-body-inner">
+<div class="post-message-container" data-role="message-container">
+<div class="publisher-anchor-color" data-role="message-content">
+<div class="post-message " data-role="message" dir="auto">
+<p>You'd have to do the promise shit I guess.. <a href="https://github.com/kriskowal/q#handling-errors" rel="nofollow">https://github.com/kriskowal/q...</a></p><p>Sometimes I just want to be able to do `q.prenuptial(cb)`</p><p>Anyways, great article, thanks!</p>
+</div>
+
+<span class="post-media"><ul data-role="post-media-list"></ul></span>
+</div>
+</div>
+<a class="see-more hidden" title="see more" data-action="see-more">see more</a>
+</div>
+
+<footer>
+<menu>
+
+<li class="voting" data-role="voting">
+<a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" class="vote-up  count-0" data-action="upvote" title="Vote up">
+
+<span class="updatable count" data-role="likes">0</span>
+<span class="control"><i aria-hidden="true" class="icon icon-arrow-2"></i></span>
+</a>
+<span role="button" class="vote-down  count-0" data-action="downvote" title="Vote down">
+
+<span class="control"><i aria-hidden="true" class="icon icon-arrow"></i></span>
+</span>
+</li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="reply" data-role="reply-link">
+<a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="reply">
+<i class="icon icon-mobile icon-reply"></i><span class="text">Reply</span></a></li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="share">
+<a class="toggle"><i class="icon icon-mobile icon-share"></i><span class="text">Share ›</span></a>
+<ul>
+<li class="twitter"><a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="share:twitter">Twitter</a></li>
+<li class="facebook"><a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="share:facebook">Facebook</a></li>
+<li class="link"><a href="http://webcache.googleusercontent.com/search?q=cache:u1tWk_w5f-QJ:davidsalter.com/2013/08/using-angular-dot-js-factories-to-get-remote-data.html+&cd=1&hl=ru&ct=clnk&gl=ua#comment-1195634340">Link</a></li>
+</ul>
+</li>
+
+<li class="realtime" data-role="realtime-notification:1195634340">
+<span style="display:none;" class="realtime-replies"></span>
+<a style="display:none;" href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" class="btn btn-small"></a>
+</li>
+
+</menu>
+</footer>
+</div>
+
+<div data-role="blacklist-form"></div>
+<div class="reply-form-container" data-role="reply-form"></div>
+</div>
+
+<ul data-role="children" class="children"><li class="post" id="post-1220858682"><div role="alert"></div>
+<div data-role="post-content" class="post-content">
+<ul class="post-menu dropdown" data-role="menu">
+<li class="collapse">
+<a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="collapse" title="Collapse"><span>−</span></a>
+</li>
+<li class="expand">
+<a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="collapse" title="Expand"><span>+</span></a>
+</li>
+
+<li class="" role="menu">
+<a class="dropdown-toggle" href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="flag" data-role="flag" title="Flag as inappropriate">
+<i aria-hidden="true" class="icon icon-flag"></i>
+</a>
+</li>
+</ul>
+<div class="indicator"></div>
+
+<div class="avatar hovercard">
+<a href="https://disqus.com/by/normchristensen/" class="user" data-action="profile" data-username="normchristensen">
+<img data-role="user-avatar" data-user="84859129" src="noavatar92.png" alt="Avatar">
+</a>
+</div>
+<div class="post-body">
+<header>
+<span class="post-byline">
+<span class="author publisher-anchor-color"><a href="https://disqus.com/by/normchristensen/" data-action="profile" data-username="normchristensen" data-role="username">not-here-now</a></span>
+
+<span><a href="http://webcache.googleusercontent.com/search?q=cache:u1tWk_w5f-QJ:davidsalter.com/2013/08/using-angular-dot-js-factories-to-get-remote-data.html+&cd=1&hl=ru&ct=clnk&gl=ua#comment-1195634340" class="parent-link" data-role="parent-link"><i aria-hidden="true" class="icon-forward" title="in reply to"></i> Mike McNeil</a></span>
+</span>
+
+<span class="post-meta">
+<span class="bullet time-ago-bullet" aria-hidden="true">•</span>
+
+<a href="http://webcache.googleusercontent.com/search?q=cache:u1tWk_w5f-QJ:davidsalter.com/2013/08/using-angular-dot-js-factories-to-get-remote-data.html+&cd=1&hl=ru&ct=clnk&gl=ua#comment-1220858682" data-role="relative-time" class="time-ago" title="Wednesday, January 29, 2014 1:49 AM">a year ago</a>
+</span>
+
+</header>
+
+<div class="post-body-inner">
+<div class="post-message-container" data-role="message-container">
+<div class="publisher-anchor-color" data-role="message-content">
+<div class="post-message " data-role="message" dir="auto">
+<p>In terms of handling errors - have a look at this article - it's a working example of getting an error message from the factory into the controller.</p><p><a href="http://sravi-kiran.blogspot.com/2013/03/MovingAjaxCallsToACustomServiceInAngularJS.html" rel="nofollow">http://sravi-kiran.blogspot.co...</a></p>
+</div>
+
+<span class="post-media"><ul data-role="post-media-list"></ul></span>
+</div>
+</div>
+<a class="see-more hidden" title="see more" data-action="see-more">see more</a>
+</div>
+
+<footer>
+<menu>
+
+<li class="voting" data-role="voting">
+<a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" class="vote-up  count-0" data-action="upvote" title="Vote up">
+
+<span class="updatable count" data-role="likes">0</span>
+<span class="control"><i aria-hidden="true" class="icon icon-arrow-2"></i></span>
+</a>
+<span role="button" class="vote-down  count-0" data-action="downvote" title="Vote down">
+
+<span class="control"><i aria-hidden="true" class="icon icon-arrow"></i></span>
+</span>
+</li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="reply" data-role="reply-link">
+<a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="reply">
+<i class="icon icon-mobile icon-reply"></i><span class="text">Reply</span></a></li>
+<li class="bullet" aria-hidden="true">•</li>
+
+
+<li class="share">
+<a class="toggle"><i class="icon icon-mobile icon-share"></i><span class="text">Share ›</span></a>
+<ul>
+<li class="twitter"><a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="share:twitter">Twitter</a></li>
+<li class="facebook"><a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="share:facebook">Facebook</a></li>
+<li class="link"><a href="http://webcache.googleusercontent.com/search?q=cache:u1tWk_w5f-QJ:davidsalter.com/2013/08/using-angular-dot-js-factories-to-get-remote-data.html+&cd=1&hl=ru&ct=clnk&gl=ua#comment-1220858682">Link</a></li>
+</ul>
+</li>
+
+<li class="realtime" data-role="realtime-notification:1220858682">
+<span style="display:none;" class="realtime-replies"></span>
+<a style="display:none;" href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" class="btn btn-small"></a>
+</li>
+
+</menu>
+</footer>
+</div>
+
+<div data-role="blacklist-form"></div>
+<div class="reply-form-container" data-role="reply-form"></div>
+</div>
+
+<ul data-role="children" class="children"></ul>
+
+</li></ul>
+
+</li></ul>
+
+</li></ul>
+
+</li></ul>
+
+<div class="load-more" data-role="more" style="display: none;">
+<a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" data-action="more-posts" class="btn">Load more comments</a>
+</div>
+</div>
+
+</section>
+
+<section id="dashboard" style="display:none" data-role="main" data-tracking-area="main">
+<p style="line-height: 1.4">Nothing for you here ... yet. But as you comment with Disqus and follow
+other Disqus users, you will start to receive notifications here, as well as a personalized
+feed of activity by you and the people you follow. So get out there and participate in
+some discussions!</p>
+</section>
+
+<section id="profile" style="display:none" data-role="main" data-tracking-area="main">
+</section>
+
+<div id="discovery" data-tracking-area="discovery-south" style="position: static; visibility: visible; display: block; width: 100%;"><div id="discovery-main-c306" class="discovery-main style-variant-default doublesection">
+<div id="discovery-note" class="discovery-note">
+<div class="alert">
+<button class="close" data-action="discovery-help-close" title="Close this box">×</button>
+Disqus helps you find new and interesting content, discussions and products. Some sponsors and ecommerce sites may pay us for these recommendations and links. <a href="https://help.disqus.com/customer/portal/articles/666278-introducing-promoted-discovery-and-f-a-q-" target="_blank">Learn more</a>
+ or <a href="https://www.surveymonkey.com/s/GHK872T" target="_blank">
+give us feedback</a>.
+</div>
+</div>
+
+<div class="discovery-options">
+<button class="discovery-help" data-action="discovery-help">
+What's this?
+</button>
+</div>
+
+<section id="col-organic-c306" class="col-organic discovery-col-0 ">
+<header class="discovery-col-header">
+
+<h2>Also on <strong>David Salter's Blog</strong>
+</h2>
+
+
+</header>
+<ul class="discovery-posts"><li class="discovery-post post-0" id="discovery-link-organic-3457798418" data-id="3457798418" style="margin-bottom: 5.77734375px;">
+<a href="http://redirect.disqus.com/url?url=http%3A%2F%2Fdavidsalter.com%2F2009%2F04%2Fmaking-eclipse-fly.html%3AD3qUJSlDkk8LAUK8QX-687T23hw&imp=5jv4nfl2njidk4&prev_imp&forum_id=2485550&forum=davidsalter&thread_id=3402198632&major_version=midway&bin=embed%3Apromoted_discovery%3Aheadline%3Atraffic_bw%3Ataboola-4%2F0%2F4&thread=3457798418&zone=thread&area=discovery" class="publisher-anchor-color">
+
+<header class="discovery-post-header">
+<h3 title="Making Eclipse Fly">
+<span data-role="discovery-thread-title" class="title line-truncate" data-line-truncate="2">
+Making Eclipse Fly
+</span>
+
+<span class="inline-meta">
+2 comments
+</span>
+
+</h3>
+
+</header>
+
+</a>
+</li>
+<li class="discovery-post post-1" id="discovery-link-organic-1647697587" data-id="1647697587" style="margin-bottom: 5.77734375px;">
+<a href="http://redirect.disqus.com/url?url=http%3A%2F%2Fdavidsalter.com%2F2012%2F03%2Fhosting-wordpress-on-openshift.html%3Akf8A1f1Lc7b6JiKBCxwCuue8R7s&imp=5jv4nfl2njidk4&prev_imp&forum_id=2485550&forum=davidsalter&thread_id=3402198632&major_version=midway&bin=embed%3Apromoted_discovery%3Aheadline%3Atraffic_bw%3Ataboola-4%2F0%2F4&thread=1647697587&zone=thread&area=discovery" class="publisher-anchor-color">
+
+<header class="discovery-post-header">
+<h3 title="Hosting WordPress On OpenShift">
+<span data-role="discovery-thread-title" class="title line-truncate" data-line-truncate="2">
+Hosting WordPress On OpenShift
+</span>
+
+<span class="inline-meta">
+5 comments
+</span>
+
+</h3>
+
+</header>
+
+</a>
+</li>
+<li class="discovery-post post-2" id="discovery-link-organic-1711927959" data-id="1711927959" style="margin-bottom: 5.77734375px;">
+<a href="http://redirect.disqus.com/url?url=http%3A%2F%2Fdavidsalter.com%2Fabout%2F%3Ar_vkyDybzM9s-jEjPU8EoLuo85U&imp=5jv4nfl2njidk4&prev_imp&forum_id=2485550&forum=davidsalter&thread_id=3402198632&major_version=midway&bin=embed%3Apromoted_discovery%3Aheadline%3Atraffic_bw%3Ataboola-4%2F0%2F4&thread=1711927959&zone=thread&area=discovery" class="publisher-anchor-color">
+
+<header class="discovery-post-header">
+<h3 title="About">
+<span data-role="discovery-thread-title" class="title line-truncate" data-line-truncate="2">
+About
+</span>
+
+<span class="inline-meta">
+2 comments
+</span>
+
+</h3>
+
+</header>
+
+</a>
+</li>
+<li class="discovery-post post-3" id="discovery-link-organic-1587924825" data-id="1587924825" style="margin-bottom: 5.77734375px;">
+<a href="http://redirect.disqus.com/url?url=http%3A%2F%2Fdavidsalter.com%2F2012%2F04%2F27%2Fusing-the-shrinkwrap-maven-resolver-for-arquillian-tests%2F%3ARZeDyyXZtQZ7DAir3_BnPg5s1TM&imp=5jv4nfl2njidk4&prev_imp&forum_id=2485550&forum=davidsalter&thread_id=3402198632&major_version=midway&bin=embed%3Apromoted_discovery%3Aheadline%3Atraffic_bw%3Ataboola-4%2F0%2F4&thread=1587924825&zone=thread&area=discovery" class="publisher-anchor-color">
+
+<header class="discovery-post-header">
+<h3 title="Using the ShrinkWrap Maven Resolver for Arquillian Tests">
+<span data-role="discovery-thread-title" class="title line-truncate" data-line-truncate="2">
+Using the ShrinkWrap Maven Resolver for Arquillian Tests
+</span>
+
+<span class="inline-meta">
+3 comments
+</span>
+
+</h3>
+
+</header>
+
+</a>
+</li>
+</ul>
+</section>
+<section id="col-promoted-c306" class="col-promoted discovery-col-1 ">
+<header class="discovery-col-header">
+
+
+<h2>Around The Web
+</h2>
+
+</header>
+<ul class="discovery-posts"><li class="discovery-post post-0" id="discovery-link-promoted-79264" data-id="79264" style="clear: right;">
+<a href="http://redirect.disqus.com/url?url=http%3A%2F%2Fapi.taboola.com%2F1.1%2Fjson%2Fdisqus-en-other-g4-text-links-above-comments%2Frecommendations.notify-click%3Fapp.type%3Ddesktop%26app.apikey%3D037849ccb5a799c70e319e9592c66e8b387105ff%26response.id%3D__cf5aeb570e8f41d5ef795a259d9c411c__2e9ff27b5750b7a07facaf3a304f9dc8%26response.session%3Dv2_498938d997433a50054944daa5613b62_95eac67011e5ac687ed3b3a30bd3aced_1426070701_1426070701_CNawjgYQ3ZM-%26item.id%3D%257E%257EV1%257E%257E5497751253640735464%257E%257EU24taao-OsSZ20x0lIvTb8WyFvcHJK8ATxdgepRasNn4w0aBZLaVLOvAnigmMgZEoRPSMREOe7XLBSrjFaYlkQ%26item.type%3Dvideo%26redir%3Dhttp%253A%252F%252Fwww.moneynews.com%252FMKTNewsIntl%252Fstock-market-crash-warren-buffett-indicator%252F2014%252F10%252F03%252Fid%252F598461%252F%253Fdkt_nbr%253Dufos34vz%2526utm_source%253Dtaboola%2526utm_medium%253Dreferral&imp=5jv4nfl2njidk4&prev_imp&forum_id=2485550&forum=davidsalter&thread_id=3402198632&major_version=midway&bin=embed%3Apromoted_discovery%3Aheadline%3Atraffic_bw%3Ataboola-4%2F0%2F4&zone=thread&area=discovery&advertisement_id=79264&brand=Newsmax&headline=%E2%80%98Warren%20Buffett%20Indicator%E2%80%99%20Signals%20Collapse%20in%20Stock%20Market" target="_blank" rel="nofollow norewrite" class="publisher-anchor-color">
+
+<header class="discovery-post-header">
+<h3 title="‘Warren Buffett Indicator’ Signals Collapse in Stock Market">
+<span data-role="discovery-thread-title" class="title line-truncate" data-line-truncate="2">
+‘Warren Buffett Indicator’ Signals Collapse in Stock Market
+</span>
+
+<span class="inline-meta">
+Newsmax
+</span>
+
+</h3>
+
+</header>
+
+</a>
+</li>
+<li class="discovery-post post-1" id="discovery-link-promoted-79265" data-id="79265" style="clear: right;">
+<a href="http://redirect.disqus.com/url?url=http%3A%2F%2Fapi.taboola.com%2F1.1%2Fjson%2Fdisqus-en-other-g4-text-links-above-comments%2Frecommendations.notify-click%3Fapp.type%3Ddesktop%26app.apikey%3D037849ccb5a799c70e319e9592c66e8b387105ff%26response.id%3D__cf5aeb570e8f41d5ef795a259d9c411c__2e9ff27b5750b7a07facaf3a304f9dc8%26response.session%3Dv2_498938d997433a50054944daa5613b62_95eac67011e5ac687ed3b3a30bd3aced_1426070701_1426070701_CNawjgYQ3ZM-%26item.id%3D%257E%257EV1%257E%257E-5837728000515460352%257E%257E7lrYA2l9A4_V_HFcUR6OY8uvTf29_wd3aLi-nozptMX92xIYL7sl2E2YUAn6A88AARtGgpUaJmmtfm9IBJsZTg%26item.type%3Dvideo%26redir%3Dhttp%253A%252F%252Fwww.thevirallane.com%252Fwhen-selfies-fight-back-19-of-the-worst-selfies-of-all-time%252F%253Futm_campaign%253D01082015-P66-T7-back-selfie%2526utm_source%253Dtaboola%2526utm_medium%253Dcpc%2526utm_term%253Ddisqus-en-other-g4-text-links-above-comments&imp=5jv4nfl2njidk4&prev_imp&forum_id=2485550&forum=davidsalter&thread_id=3402198632&major_version=midway&bin=embed%3Apromoted_discovery%3Aheadline%3Atraffic_bw%3Ataboola-4%2F0%2F4&zone=thread&area=discovery&advertisement_id=79265&brand=The%20Viral%20Lane&headline=15%20Crazy%20Selfies%20That%20Should%20Be%20Removed%20From%20The%20Internet" target="_blank" rel="nofollow norewrite" class="publisher-anchor-color">
+
+<header class="discovery-post-header">
+<h3 title="15 Crazy Selfies That Should Be Removed From The Internet">
+<span data-role="discovery-thread-title" class="title line-truncate" data-line-truncate="2">
+15 Crazy Selfies That Should Be Removed From The Internet
+</span>
+
+<span class="inline-meta">
+The Viral Lane
+</span>
+
+</h3>
+
+</header>
+
+</a>
+</li>
+<li class="discovery-post post-2" id="discovery-link-promoted-79266" data-id="79266" style="clear: right;">
+<a href="http://redirect.disqus.com/url?url=http%3A%2F%2Fapi.taboola.com%2F1.1%2Fjson%2Fdisqus-en-other-g4-text-links-above-comments%2Frecommendations.notify-click%3Fapp.type%3Ddesktop%26app.apikey%3D037849ccb5a799c70e319e9592c66e8b387105ff%26response.id%3D__cf5aeb570e8f41d5ef795a259d9c411c__2e9ff27b5750b7a07facaf3a304f9dc8%26response.session%3Dv2_498938d997433a50054944daa5613b62_95eac67011e5ac687ed3b3a30bd3aced_1426070701_1426070701_CNawjgYQ3ZM-%26item.id%3D%257E%257EV1%257E%257E-2695064530069612221%257E%257EKbx_xui3WIWHK30OrJD5hECPdDX-n9yiQp10ypeO9JPTBbQw1iNFzumtL8LIfYYaoRPSMREOe7XLBSrjFaYlkQ%26item.type%3Dvideo%26redir%3Dhttp%253A%252F%252Fgo2.revolutiongolf.com%252Faff_c%253Foffer_id%253D76%2526aff_id%253D1045%2526aff_sub%253Dlanding_page%2526aff_sub4%253DMartin_Ball_Global%2526aff_sub2%253Dhttp%25253A%25252F%25252Fcdn.taboolasyndication.com%25252Flibtrc%25252Fstatic%25252Fthumbnails%25252Fd58756d3c7f0fc9c34abaa71ccc84a9b.jpg%2526aff_sub3%253DHow%252BDo%252BPro%252BGolfer%252527s%252BSwing%252BSo%252BFast%25253F%2526aff_sub5%253Ddisqus-en-other-g4-text-links-above-comments%2526random_url%253D1%2526utm_source%253DTaboola%2526utm_medium%253Dcpc%2526utm_campaign%253DMartin_Ball_Global&imp=5jv4nfl2njidk4&prev_imp&forum_id=2485550&forum=davidsalter&thread_id=3402198632&major_version=midway&bin=embed%3Apromoted_discovery%3Aheadline%3Atraffic_bw%3Ataboola-4%2F0%2F4&zone=thread&area=discovery&advertisement_id=79266&brand=Revolution%20Golf&headline=How%20Do%20Pro%20Golfer%27s%20Swing%20So%20Fast%3F" target="_blank" rel="nofollow norewrite" class="publisher-anchor-color">
+
+<header class="discovery-post-header">
+<h3 title="How Do Pro Golfer&#39;s Swing So Fast?">
+<span data-role="discovery-thread-title" class="title line-truncate" data-line-truncate="2">
+How Do Pro Golfer's Swing So Fast?
+</span>
+
+<span class="inline-meta">
+Revolution Golf
+</span>
+
+</h3>
+
+</header>
+
+</a>
+</li>
+
+</ul>
+</section>
+
+</div>
+</div>
+
+<div id="footer" data-tracking-area="footer">
+<ul>
+<li class="logo"><a href="https://disqus.com/" rel="nofollow" title="Powered by Disqus">Powered by Disqus</a></li>
+<li id="thread-subscribe-button" class="email"> 
+<div class="default">
+<a href="http://disqus.com/embed/comments/?base=default&version=10cfd99a1042e73c969e091b48e255d7&f=davidsalter&t_u=http%3A%2F%2Fwebcache.googleusercontent.com%2Fsearch%3Fq%3Dcache%3Au1tWk_w5f-QJ%3Adavidsalter.com%2F2013%2F08%2Fusing-angular-dot-js-factories-to-get-remote-data.html%2B%26cd%3D1%26hl%3Dru%26ct%3Dclnk%26gl%3Dua&t_d=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&t_t=Using%20Angular.js%20Factories%20To%20Get%20Remote%20Data&s_o=default#" rel="nofollow" data-action="subscribe" title="Subscribe and get email updates from this discussion"><i aria-hidden="true" class="icon-mail"></i><span class="clip">Subscribe</span> <i aria-hidden="true" class="icon-checkmark"></i></a>
+</div>
+<div class="form">
+<div class="input-wrapper"><input id="thread-subscribe-email" type="email" placeholder="yourname@email.com"></div>
+</div>
+</li>
+<li class="install">
+<a href="https://disqus.com/websites/?utm_source=davidsalter&utm_medium=Disqus-Footer" rel="nofollow" target="_blank">
+<i aria-hidden="true" class="icon-disqus"></i>
+<span class="clip">Add Disqus to your site</span>
+</a>
+</li>
+<li class="privacy">
+<a href="https://help.disqus.com/customer/portal/articles/1657951?utm_source=disqus&utm_medium=embed-footer&utm_content=privacy-btn" rel="nofollow" target="_blank">
+<i aria-hidden="true" class="icon-privacy"></i>
+<span class="clip">Privacy</span>
+</a>
+</li>
+</ul>
+</div>
+</div></body></html>

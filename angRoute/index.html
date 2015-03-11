@@ -1,0 +1,63 @@
+<!doctype html>
+<html ng-app="myApp">
+<head>
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.min.js"></script>
+    <script src="angular-ui-router.min.js"></script>
+    <script>
+        var myApp = angular.module('myApp', ['ui.router']);
+		
+		
+		myApp.config(function($stateProvider, $urlRouterProvider) {
+	  //
+	  // For any unmatched url, redirect to /state1
+	  //urlRouterProvider.otherwise("/");
+	  $urlRouterProvider.otherwise("/");
+	  //
+	  // Now set up the states
+	  $stateProvider
+		.state('state1', {
+		  url: "/state1/{ii}",
+		  template: '<h1>erwqrer{{9+1}}  {{mf.myvar}}</h1> <hr /> <a ui-sref="state1.list">Show List</a>',
+		  controller: "first as mf"
+		  //templateUrl: "partials/state1.html"
+		})
+		 
+		 
+		 
+		.state('state1.list', {
+		  url: "/list/{contactId}",
+		  template: '!!!! <ul>  <li ng-repeat="item in items">{{ item }}</li> </ul>',
+		  controller: function($stateParams) {
+			//$scope.items = ["A", "List", "Of", "Items"];
+			
+			console.log('rewr');
+		  }
+		})
+		 .state('state2', {
+		  url: "/state2",
+		  //template: "<h1>erwqrer</h1>"
+		  templateUrl: "partials/state1.html"
+		})
+		});
+        // For Component users, it should look like this:
+        // var myApp = angular.module('myApp', [require('angular-ui-router')]);
+		
+		myApp.controller('first',function($stateParams){
+			this.myvar="dsad";
+			//console.log($stateParams);
+			this.myvar=$stateParams.ii;
+		
+		});
+		
+    </script>
+    ...
+</head>
+<!-- index.html -->
+<body>
+    <div ui-view></div>
+    <!-- We'll also add some navigation: -->
+    <a ui-sref="state1">State 1</a>
+    <a ui-sref="state2">State 2</a>
+</body>
+</html>
