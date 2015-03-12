@@ -19,4 +19,10 @@ App.config(function($stateProvider, $urlRouterProvider) {
 		  templateUrl: "partials/product.html"
 		})
   
+		.state('cart', {
+		  url: "/cart",
+		  controller: "cCart as cC",
+		  templateUrl: "partials/cart.html"
+		})
+  
   });

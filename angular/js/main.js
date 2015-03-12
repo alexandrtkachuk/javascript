@@ -17,12 +17,13 @@ App.service('sCart', function(vCart) {
 	this.addCart=function($scope,obj){
 		
 		
-		//console.log(vCart.total);
+		console.log('!!');
 		
-		vCart.arr[obj.id]=obj;
+		vCart.arr[obj.id.toString()+'i']=obj;
+		console.log(vCart.arr);
 		vCart.total=0;
 		vCart.arr.forEach(function(entry) {
-			//console.log(entry);
+			console.log(entry);
 			if(null!==entry){
 				vCart.total+=(entry.count*entry.price);
 				}
