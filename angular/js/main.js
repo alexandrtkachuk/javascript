@@ -12,14 +12,36 @@ App.value('vCart', {
 
 
 App.service('sCart', function(vCart) {
- 	
+ 
 	
 	this.addCart=function($scope,obj){
 		
 		
-		console.log('!!');
+		var test=true;
 		
-		vCart.arr[obj.id.toString()+'i']=obj;
+		vCart.arr.forEach(function(entry) {
+			if(null!==entry){
+				if(entry.id==obj.id){ 
+					if(entry.count==obj.count) {
+						//entry.count=10;
+						test=false;
+						return;
+					}
+					else {
+						entry.count=obj.count;
+						test=false;
+						return;
+					}
+				}
+			}
+		});
+		
+		if(test===true){
+		
+			vCart.arr.push(obj);
+		}
+		
+		
 		console.log(vCart.arr);
 		vCart.total=0;
 		vCart.arr.forEach(function(entry) {
@@ -32,7 +54,7 @@ App.service('sCart', function(vCart) {
 		
 			
 		//in store
-		window.localStorage.tai=JSON.stringify(vCart);
+		//window.localStorage.taishop=JSON.stringify(vCart);
 	}
   
 });
@@ -47,9 +69,9 @@ App.controller('gCart',function($scope ,vCart){
 	$scope.cart=vCart;
 	var t;
 	
-	if( typeof(window.localStorage.tai) == "string")
+	if( typeof(window.localStorage.taishop) == "string")
 		{
-			var arr= $.parseJSON('[' + window.localStorage.tai+ ']');
+			var arr= $.parseJSON('[' + window.localStorage.taishop+ ']');
 			//console.log(vCart);
 			
 			if(arr!=0) {
@@ -59,7 +81,7 @@ App.controller('gCart',function($scope ,vCart){
 			//console.log(arr[0]);
 		}
 		
-	//window.localStorage.tai=0;
+	window.localStorage.taishop=0;
 	//
 	//window.localStorage.tai=JSON.stringify(vCart);
 	

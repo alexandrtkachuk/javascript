@@ -4,7 +4,7 @@ App.service('products', function($http) {
 	
 	this.getItems= function(callback) { 
 		
-		  $http.get('api/').success(callback);	
+		  $http.get('api/index.php').success(callback);	
 	
 	}
   
