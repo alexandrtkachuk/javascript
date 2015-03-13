@@ -11,7 +11,7 @@ App.service('getproduct', function($http) {
 });
 
 
-App.controller('cProduct',function(getproduct, $stateParams, sCart ,$scope){
+App.controller('cProduct',function(getproduct, $stateParams, mCart){
 	
 	
 	
@@ -25,16 +25,13 @@ App.controller('cProduct',function(getproduct, $stateParams, sCart ,$scope){
         });
 	
 	
-	this.buy=function(count) {
-		
+	this.buy=function(count){
 			var obj={
-				'price':temp.value.price,
-				'id':temp.value.id,
+				'el':this.item.value,
 				'count': count
 				}
-			sCart.addCart($scope,obj);
+			mCart.add(obj);
 			
-			//console.log(val);
 	}
 	
 	

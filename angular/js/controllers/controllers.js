@@ -11,7 +11,7 @@ App.service('products', function($http) {
 });
 
 
-App.controller('iControler',function(products, sCart ,$scope){
+App.controller('iControler',function(products, mCart ,$scope){
 	
 	
 	
@@ -21,17 +21,26 @@ App.controller('iControler',function(products, sCart ,$scope){
 	
 		products.getItems( function(data, status, headers, config) {
 			temp.value=data;
+			//console.log(data[0]);
         });
 	
-	this.buy=function(price,id)
+	
+	
+	
+	
+	
+	this.buy=function(ind)
 	{		
+		
+			
 			var obj={
-				'price':price,
-				'id':id,
+				'el':this.me.value[ind],
 				'count': 1
 				}
-			sCart.addCart($scope,obj);
-			//console.log(price);
+			mCart.add(obj);
+			
+			//console.log(this.me.value[ind]);
+			
 	}
 	
 });

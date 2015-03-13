@@ -2,28 +2,25 @@ var App=angular.module('myshop',['ui.router']);
 
 
 
-
-App.value('vCart', {
+App.factory('mCart', function() {
   
-  total:0,
-  "arr": new Array()
-});
-
-
-
-App.service('sCart', function(vCart) {
- 
-	
-	this.addCart=function($scope,obj){
-		
-		
+  
+  var cart={"count":0,
+	  "arr": new Array(),
+	  "add": null
+	  };
+  
+  
+  
+  cart.add=function (obj){
+	  
+	  
 		var test=true;
 		
-		vCart.arr.forEach(function(entry) {
+		this.arr.forEach(function(entry) {
 			if(null!==entry){
-				if(entry.id==obj.id){ 
+				if(entry.el.id==obj.el.id){ 
 					if(entry.count==obj.count) {
-						//entry.count=10;
 						test=false;
 						return;
 					}
@@ -38,35 +35,37 @@ App.service('sCart', function(vCart) {
 		
 		if(test===true){
 		
-			vCart.arr.push(obj);
+			this.arr.push(obj);
 		}
 		
 		
-		console.log(vCart.arr);
-		vCart.total=0;
-		vCart.arr.forEach(function(entry) {
-			console.log(entry);
-			if(null!==entry){
-				vCart.total+=(entry.count*entry.price);
-				}
-			
-		});	
 		
-			
+		
+		this.count=this.arr.length;	
+		
+		console.log(this.arr);
 		//in store
 		//window.localStorage.taishop=JSON.stringify(vCart);
-	}
+	  
+	  }
+  
+  return cart;
+  
   
 });
 
+
+
+
 //глобальная корзина
-App.controller('gCart',function($scope ,vCart){
+App.controller('gCart',function($scope ,mCart){
 		
 	
 	
 	
 	
-	$scope.cart=vCart;
+	
+	/*
 	var t;
 	
 	if( typeof(window.localStorage.taishop) == "string")
@@ -82,6 +81,10 @@ App.controller('gCart',function($scope ,vCart){
 		}
 		
 	window.localStorage.taishop=0;
+	
+	*/
+	
+	
 	//
 	//window.localStorage.tai=JSON.stringify(vCart);
 	

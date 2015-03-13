@@ -1,17 +1,25 @@
-App.controller('cCart',function(vCart){
+App.controller('cCart',function(mCart){
 	
 		
-		this.items=vCart.arr;
+	   this.cart=mCart;
+		
+	   this.items=mCart.arr;
 		
 		
-		var mas= new Array();
-		
-		
-		var i=9;
-		mas[i.toString()+'e']=11;
-		i++;
-		mas[i.toString()+'e']=12;
-		console.log(mas.length);
+		this.total= function ()
+		{
+			var total = 0;
+			this.items.forEach(function(item) {
+				total += item.el.price * item.count;
+			})
 
-
+			return total;
+		}
+		
+		this.remove = function (index){
+			
+			this.items.splice(index,1);
+			//console.log(index);
+		}
+		
 });
