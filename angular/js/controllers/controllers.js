@@ -31,16 +31,8 @@ App.controller('iControler',function(products, mCart ,$scope){
 	
 	this.buy=function(ind)
 	{		
-		
-			
-			var obj={
-				'el':this.me.value[ind],
-				'count': 1
-				}
-			mCart.add(obj);
-			
-			//console.log(this.me.value[ind]);
-			
+			mCart.add(this.me.value[ind],1);
+			//console.log(this.me.value[ind]);	
 	}
 	
 });

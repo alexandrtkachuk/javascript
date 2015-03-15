@@ -33,7 +33,11 @@ App.config(function($stateProvider, $urlRouterProvider) {
 		  templateUrl: "partials/cart.html"
 		})
 		
-		
+		.state('buy', {			
+		  url: "/buy",
+		  controller: "cBuy as cB",
+		  templateUrl: "partials/buy.html"
+		})
 		
 
   });

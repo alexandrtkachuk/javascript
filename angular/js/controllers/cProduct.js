@@ -26,11 +26,8 @@ App.controller('cProduct',function(getproduct, $stateParams, mCart){
 	
 	
 	this.buy=function(count){
-			var obj={
-				'el':this.item.value,
-				'count': count
-				}
-			mCart.add(obj);
+
+			mCart.add(this.item.value,count);
 			
 	}
 	

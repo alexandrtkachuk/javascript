@@ -21,3 +21,8 @@
 {
 	width:50px;
 }
+
+input.ng-invalid
+{
+	color:red;
+}

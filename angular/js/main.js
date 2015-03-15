@@ -7,13 +7,22 @@ App.factory('mCart', function() {
   
   var cart={"count":0,
 	  "arr": new Array(),
-	  "add": null
+	  "add": null,
+	  "del": null,
+	  "setLS": null,
+	  "getLS": null
 	  };
   
   
   
-  cart.add=function (obj){
-	  
+  cart.add=function (el,count){
+		
+		
+			var obj={
+				'el':el,
+				'count': count
+				}
+			
 	  
 		var test=true;
 		
@@ -43,12 +52,62 @@ App.factory('mCart', function() {
 		
 		this.count=this.arr.length;	
 		
-		console.log(this.arr);
+		//console.log(this.arr);
 		//in store
-		//window.localStorage.taishop=JSON.stringify(vCart);
+		//
+		this.setLS();
 	  
 	  }
   
+	cart.del= function (index)
+	{
+			this.arr.splice(index,1);
+			this.count=this.arr.length;
+			this.setLS();
+	}
+	
+	cart.setLS = function ()
+	{	//вносим в локал сторе
+		var temp={
+			"count":this.count,
+			"arr":this.arr
+			}
+		window.localStorage.taishop=JSON.stringify(temp);	
+	}
+	
+	cart.getLS = function () {
+		//console.log('get');
+		if(this.count>0){return;}
+		
+		console.log('get');
+		
+		if( typeof(window.localStorage.taishop) == "string"){
+			var temp=$.parseJSON('[' + window.localStorage.taishop+ ']');
+			if(typeof(temp[0].count)=="number"){
+				//this.count=temp[0].count;
+				//this.arr=temp[0].arr;
+				//console.log(temp[0].arr);
+				temp[0].arr.forEach(function(entry) {
+				   cart.add(entry.el, entry.count);
+					//console.log(entry);
+				});
+				
+				
+				
+			}
+			
+		}	
+		
+	} //end get
+	
+	
+	cart.clear= function(){
+		this.arr= new Array();
+		this.count=0;
+		this.setLS();
+	}
+	
+	
   return cart;
   
   

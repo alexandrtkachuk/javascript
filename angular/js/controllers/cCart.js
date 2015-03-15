@@ -1,6 +1,8 @@
 App.controller('cCart',function(mCart){
 	
-		
+	   
+	   mCart.getLS();
+	   
 	   this.cart=mCart;
 		
 	   this.items=mCart.arr;
@@ -12,13 +14,13 @@ App.controller('cCart',function(mCart){
 			this.items.forEach(function(item) {
 				total += item.el.price * item.count;
 			})
-
+			mCart.setLS();
 			return total;
 		}
 		
 		this.remove = function (index){
 			
-			this.items.splice(index,1);
+			mCart.del(index);
 			//console.log(index);
 		}
 		
