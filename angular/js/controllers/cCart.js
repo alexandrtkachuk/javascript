@@ -4,7 +4,8 @@ App.controller('cCart',function(mCart){
 	   mCart.getLS();
 	   
 	   this.cart=mCart;
-		
+	   this.name="Корзина";
+	   
 	   this.items=mCart.arr;
 		
 		
@@ -21,6 +22,9 @@ App.controller('cCart',function(mCart){
 		this.remove = function (index){
 			
 			mCart.del(index);
+			if(0==mCart.count) {
+				document.location.href = 'index.html#/';
+			}
 			//console.log(index);
 		}
 		

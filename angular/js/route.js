@@ -5,10 +5,22 @@ App.config(function($stateProvider, $urlRouterProvider) {
 	  $urlRouterProvider.otherwise("/");
 	  $urlRouterProvider.when('/cart', [ 'mCart',function (mCart) {
             //console.log(mCart);
-            
+            mCart.getLS();
             if(mCart.count==0)
             {
 					return '/'; //кула перенапрвить если корзина пуста
+			}
+            
+            return false;
+		}]);
+	
+	
+	$urlRouterProvider.when('/buy', [ 'mCart',function (mCart) {
+            //console.log(mCart);
+            mCart.getLS();
+            if(mCart.count==0)
+            {
+					return '/'; //куда перенапрвить если корзина пуста
 			}
             
             return false;

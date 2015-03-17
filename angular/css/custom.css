@@ -26,3 +26,8 @@ input.ng-invalid
 {
 	color:red;
 }
+
+
+.width20{
+	width:25%; 
+}

@@ -79,7 +79,7 @@ App.factory('mCart', function() {
 		//console.log('get');
 		if(this.count>0){return;}
 		
-		console.log('get');
+		//console.log('get');
 		
 		if( typeof(window.localStorage.taishop) == "string"){
 			var temp=$.parseJSON('[' + window.localStorage.taishop+ ']');
